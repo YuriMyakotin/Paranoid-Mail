@@ -1,0 +1,26 @@
+﻿<Window x:Class="Paranoid.DeleteContactDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Delete contact"
+        Background="{StaticResource BgColor}"
+        ResizeMode="NoResize"
+        ShowInTaskbar="True"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow">
+	<StackPanel Margin="5">
+		<TextBlock Margin="10,5,10,5"
+		           HorizontalAlignment="Center"
+		           Text="Are you sure to delete contact" />
+		<TextBlock x:Name="CntName" HorizontalAlignment="Center" />
+		<TextBlock Margin="10,5,10,5"
+		           HorizontalAlignment="Center"
+		           Text="WARNING: This operation cannot be undone!" />
+		<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+			<Button Click="DeleteButton_OnClick" Content="Delete" />
+			<Button Content="Cancel"
+			        IsCancel="True"
+			        IsDefault="True" />
+		</StackPanel>
+	</StackPanel>
+</Window>

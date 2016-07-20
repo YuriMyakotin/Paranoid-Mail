@@ -1,0 +1,3682 @@
+<stylecopresultscache>
+  <version>12</version>
+  <project key="-1469864093">
+    <configuration>
+    </configuration>
+  </project>
+  <sourcecode name="ChaCha.cs" parser="StyleCop.CSharp.CsParser">
+    <timestamps>
+      <styleCop>2015.10.15 11:42:40.309</styleCop>
+      <settingsFile>2015.10.15 11:42:40.292</settingsFile>
+      <sourceFile>2015.10.12 13:00:57.026</sourceFile>
+      <parser>2015.10.15 11:42:40.309</parser>
+      <StyleCop.CSharp.DocumentationRules>2015.10.15 11:42:40.309</StyleCop.CSharp.DocumentationRules>
+      <StyleCop.CSharp.DocumentationRules.FilesHashCode>-1675167514</StyleCop.CSharp.DocumentationRules.FilesHashCode>
+      <StyleCop.CSharp.LayoutRules>2015.10.15 11:42:40.309</StyleCop.CSharp.LayoutRules>
+      <StyleCop.CSharp.LayoutRules.FilesHashCode>0</StyleCop.CSharp.LayoutRules.FilesHashCode>
+      <StyleCop.CSharp.MaintainabilityRules>2015.10.15 11:42:40.309</StyleCop.CSharp.MaintainabilityRules>
+      <StyleCop.CSharp.MaintainabilityRules.FilesHashCode>0</StyleCop.CSharp.MaintainabilityRules.FilesHashCode>
+      <StyleCop.CSharp.NamingRules>2015.10.15 11:42:40.309</StyleCop.CSharp.NamingRules>
+      <StyleCop.CSharp.NamingRules.FilesHashCode>0</StyleCop.CSharp.NamingRules.FilesHashCode>
+      <StyleCop.CSharp.OrderingRules>2015.10.15 11:42:40.309</StyleCop.CSharp.OrderingRules>
+      <StyleCop.CSharp.OrderingRules.FilesHashCode>0</StyleCop.CSharp.OrderingRules.FilesHashCode>
+      <StyleCop.CSharp.ReadabilityRules>2015.10.15 11:42:40.309</StyleCop.CSharp.ReadabilityRules>
+      <StyleCop.CSharp.ReadabilityRules.FilesHashCode>0</StyleCop.CSharp.ReadabilityRules.FilesHashCode>
+      <StyleCop.CSharp.SpacingRules>2015.10.15 11:42:40.309</StyleCop.CSharp.SpacingRules>
+      <StyleCop.CSharp.SpacingRules.FilesHashCode>0</StyleCop.CSharp.SpacingRules.FilesHashCode>
+    </timestamps>
+    <violations>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="FileMustHaveHeader" ruleCheckId="SA1633">
+        <context>The file has no header, the header Xml is invalid, or the header is not located at the top of the file.</context>
+        <line>1</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainBlankLinesAtEndOfFile" ruleCheckId="SA1518">
+        <context>The code must not contain blank lines at the end of the file.</context>
+        <line>178</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CodeMustNotContainMultipleBlankLinesInARow" ruleCheckId="SA1507">
+        <context>The code must not contain multiple blank lines in a row.</context>
+        <line>178</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The class must have a documentation header.</context>
+        <line>6</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="SingleLineCommentMustBePrecededByBlankLine" ruleCheckId="SA1515">
+        <context>A single-line comment must be preceded by a blank line or another single-line comment, or must be the first item in its scope. To ignore this error when commenting out a line of code, begin the comment with '////' rather than '//'.</context>
+        <line>153</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The field must have a documentation header.</context>
+        <line>8</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The field must have a documentation header.</context>
+        <line>9</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The field must have a documentation header.</context>
+        <line>10</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The field must have a documentation header.</context>
+        <line>11</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The constructor must have a documentation header.</context>
+        <line>14</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>33</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketMustBeFollowedByBlankLine" ruleCheckId="SA1513">
+        <context>Statements or elements wrapped in curly brackets must be followed by a blank line.</context>
+        <line>38</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>44</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketMustBeFollowedByBlankLine" ruleCheckId="SA1513">
+        <context>Statements or elements wrapped in curly brackets must be followed by a blank line.</context>
+        <line>122</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>55</line>
+        <index>1956</index>
+        <endIndex>2000</endIndex>
+        <startLine>55</startLine>
+        <startColumn>24</startColumn>
+        <endLine>55</endLine>
+        <endColumn>68</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>58</line>
+        <index>2137</index>
+        <endIndex>2156</endIndex>
+        <startLine>58</startLine>
+        <startColumn>24</startColumn>
+        <endLine>58</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>58</line>
+        <index>2148</index>
+        <endIndex>2154</endIndex>
+        <startLine>58</startLine>
+        <startColumn>35</startColumn>
+        <endLine>58</endLine>
+        <endColumn>41</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>59</line>
+        <index>2183</index>
+        <endIndex>2250</endIndex>
+        <startLine>59</startLine>
+        <startColumn>24</startColumn>
+        <endLine>59</endLine>
+        <endColumn>91</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>59</line>
+        <index>2185</index>
+        <endIndex>2203</endIndex>
+        <startLine>59</startLine>
+        <startColumn>26</startColumn>
+        <endLine>59</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>59</line>
+        <index>2187</index>
+        <endIndex>2192</endIndex>
+        <startLine>59</startLine>
+        <startColumn>28</startColumn>
+        <endLine>59</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>59</line>
+        <index>2196</index>
+        <endIndex>2201</endIndex>
+        <startLine>59</startLine>
+        <startColumn>37</startColumn>
+        <endLine>59</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>59</line>
+        <index>2208</index>
+        <endIndex>2210</endIndex>
+        <startLine>59</startLine>
+        <startColumn>49</startColumn>
+        <endLine>59</endLine>
+        <endColumn>51</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>59</line>
+        <index>2216</index>
+        <endIndex>2234</endIndex>
+        <startLine>59</startLine>
+        <startColumn>57</startColumn>
+        <endLine>59</endLine>
+        <endColumn>75</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>59</line>
+        <index>2218</index>
+        <endIndex>2223</endIndex>
+        <startLine>59</startLine>
+        <startColumn>59</startColumn>
+        <endLine>59</endLine>
+        <endColumn>64</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>59</line>
+        <index>2227</index>
+        <endIndex>2232</endIndex>
+        <startLine>59</startLine>
+        <startColumn>68</startColumn>
+        <endLine>59</endLine>
+        <endColumn>73</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>59</line>
+        <index>2245</index>
+        <endIndex>2247</endIndex>
+        <startLine>59</startLine>
+        <startColumn>86</startColumn>
+        <endLine>59</endLine>
+        <endColumn>88</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>60</line>
+        <index>2277</index>
+        <endIndex>2293</endIndex>
+        <startLine>60</startLine>
+        <startColumn>24</startColumn>
+        <endLine>60</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>60</line>
+        <index>2286</index>
+        <endIndex>2291</endIndex>
+        <startLine>60</startLine>
+        <startColumn>33</startColumn>
+        <endLine>60</endLine>
+        <endColumn>38</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>61</line>
+        <index>2321</index>
+        <endIndex>2392</endIndex>
+        <startLine>61</startLine>
+        <startColumn>25</startColumn>
+        <endLine>61</endLine>
+        <endColumn>96</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>61</line>
+        <index>2323</index>
+        <endIndex>2342</endIndex>
+        <startLine>61</startLine>
+        <startColumn>27</startColumn>
+        <endLine>61</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>61</line>
+        <index>2325</index>
+        <endIndex>2331</endIndex>
+        <startLine>61</startLine>
+        <startColumn>29</startColumn>
+        <endLine>61</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>61</line>
+        <index>2335</index>
+        <endIndex>2340</endIndex>
+        <startLine>61</startLine>
+        <startColumn>39</startColumn>
+        <endLine>61</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>61</line>
+        <index>2347</index>
+        <endIndex>2350</endIndex>
+        <startLine>61</startLine>
+        <startColumn>51</startColumn>
+        <endLine>61</endLine>
+        <endColumn>54</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>61</line>
+        <index>2356</index>
+        <endIndex>2375</endIndex>
+        <startLine>61</startLine>
+        <startColumn>60</startColumn>
+        <endLine>61</endLine>
+        <endColumn>79</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>61</line>
+        <index>2358</index>
+        <endIndex>2364</endIndex>
+        <startLine>61</startLine>
+        <startColumn>62</startColumn>
+        <endLine>61</endLine>
+        <endColumn>68</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>61</line>
+        <index>2368</index>
+        <endIndex>2373</endIndex>
+        <startLine>61</startLine>
+        <startColumn>72</startColumn>
+        <endLine>61</endLine>
+        <endColumn>77</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>61</line>
+        <index>2386</index>
+        <endIndex>2389</endIndex>
+        <startLine>61</startLine>
+        <startColumn>90</startColumn>
+        <endLine>61</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>62</line>
+        <index>2419</index>
+        <endIndex>2438</endIndex>
+        <startLine>62</startLine>
+        <startColumn>24</startColumn>
+        <endLine>62</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>62</line>
+        <index>2430</index>
+        <endIndex>2436</endIndex>
+        <startLine>62</startLine>
+        <startColumn>35</startColumn>
+        <endLine>62</endLine>
+        <endColumn>41</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>63</line>
+        <index>2465</index>
+        <endIndex>2534</endIndex>
+        <startLine>63</startLine>
+        <startColumn>24</startColumn>
+        <endLine>63</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>63</line>
+        <index>2467</index>
+        <endIndex>2485</endIndex>
+        <startLine>63</startLine>
+        <startColumn>26</startColumn>
+        <endLine>63</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>63</line>
+        <index>2469</index>
+        <endIndex>2474</endIndex>
+        <startLine>63</startLine>
+        <startColumn>28</startColumn>
+        <endLine>63</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>63</line>
+        <index>2478</index>
+        <endIndex>2483</endIndex>
+        <startLine>63</startLine>
+        <startColumn>37</startColumn>
+        <endLine>63</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>63</line>
+        <index>2490</index>
+        <endIndex>2493</endIndex>
+        <startLine>63</startLine>
+        <startColumn>49</startColumn>
+        <endLine>63</endLine>
+        <endColumn>52</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>63</line>
+        <index>2499</index>
+        <endIndex>2517</endIndex>
+        <startLine>63</startLine>
+        <startColumn>58</startColumn>
+        <endLine>63</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>63</line>
+        <index>2501</index>
+        <endIndex>2506</endIndex>
+        <startLine>63</startLine>
+        <startColumn>60</startColumn>
+        <endLine>63</endLine>
+        <endColumn>65</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>63</line>
+        <index>2510</index>
+        <endIndex>2515</endIndex>
+        <startLine>63</startLine>
+        <startColumn>69</startColumn>
+        <endLine>63</endLine>
+        <endColumn>74</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>63</line>
+        <index>2528</index>
+        <endIndex>2531</endIndex>
+        <startLine>63</startLine>
+        <startColumn>87</startColumn>
+        <endLine>63</endLine>
+        <endColumn>90</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>64</line>
+        <index>2561</index>
+        <endIndex>2579</endIndex>
+        <startLine>64</startLine>
+        <startColumn>24</startColumn>
+        <endLine>64</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>64</line>
+        <index>2572</index>
+        <endIndex>2577</endIndex>
+        <startLine>64</startLine>
+        <startColumn>35</startColumn>
+        <endLine>64</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>65</line>
+        <index>2607</index>
+        <endIndex>2676</endIndex>
+        <startLine>65</startLine>
+        <startColumn>25</startColumn>
+        <endLine>65</endLine>
+        <endColumn>94</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>65</line>
+        <index>2609</index>
+        <endIndex>2628</endIndex>
+        <startLine>65</startLine>
+        <startColumn>27</startColumn>
+        <endLine>65</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>65</line>
+        <index>2611</index>
+        <endIndex>2617</endIndex>
+        <startLine>65</startLine>
+        <startColumn>29</startColumn>
+        <endLine>65</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>65</line>
+        <index>2621</index>
+        <endIndex>2626</endIndex>
+        <startLine>65</startLine>
+        <startColumn>39</startColumn>
+        <endLine>65</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>65</line>
+        <index>2633</index>
+        <endIndex>2635</endIndex>
+        <startLine>65</startLine>
+        <startColumn>51</startColumn>
+        <endLine>65</endLine>
+        <endColumn>53</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>65</line>
+        <index>2641</index>
+        <endIndex>2660</endIndex>
+        <startLine>65</startLine>
+        <startColumn>59</startColumn>
+        <endLine>65</endLine>
+        <endColumn>78</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>65</line>
+        <index>2643</index>
+        <endIndex>2649</endIndex>
+        <startLine>65</startLine>
+        <startColumn>61</startColumn>
+        <endLine>65</endLine>
+        <endColumn>67</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>65</line>
+        <index>2653</index>
+        <endIndex>2658</endIndex>
+        <startLine>65</startLine>
+        <startColumn>71</startColumn>
+        <endLine>65</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>65</line>
+        <index>2671</index>
+        <endIndex>2673</endIndex>
+        <startLine>65</startLine>
+        <startColumn>89</startColumn>
+        <endLine>65</endLine>
+        <endColumn>91</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>66</line>
+        <index>2703</index>
+        <endIndex>2722</endIndex>
+        <startLine>66</startLine>
+        <startColumn>24</startColumn>
+        <endLine>66</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>66</line>
+        <index>2714</index>
+        <endIndex>2720</endIndex>
+        <startLine>66</startLine>
+        <startColumn>35</startColumn>
+        <endLine>66</endLine>
+        <endColumn>41</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>67</line>
+        <index>2749</index>
+        <endIndex>2816</endIndex>
+        <startLine>67</startLine>
+        <startColumn>24</startColumn>
+        <endLine>67</endLine>
+        <endColumn>91</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>67</line>
+        <index>2751</index>
+        <endIndex>2769</endIndex>
+        <startLine>67</startLine>
+        <startColumn>26</startColumn>
+        <endLine>67</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>67</line>
+        <index>2753</index>
+        <endIndex>2758</endIndex>
+        <startLine>67</startLine>
+        <startColumn>28</startColumn>
+        <endLine>67</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>67</line>
+        <index>2762</index>
+        <endIndex>2767</endIndex>
+        <startLine>67</startLine>
+        <startColumn>37</startColumn>
+        <endLine>67</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>67</line>
+        <index>2774</index>
+        <endIndex>2776</endIndex>
+        <startLine>67</startLine>
+        <startColumn>49</startColumn>
+        <endLine>67</endLine>
+        <endColumn>51</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>67</line>
+        <index>2782</index>
+        <endIndex>2800</endIndex>
+        <startLine>67</startLine>
+        <startColumn>57</startColumn>
+        <endLine>67</endLine>
+        <endColumn>75</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>67</line>
+        <index>2784</index>
+        <endIndex>2789</endIndex>
+        <startLine>67</startLine>
+        <startColumn>59</startColumn>
+        <endLine>67</endLine>
+        <endColumn>64</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>67</line>
+        <index>2793</index>
+        <endIndex>2798</endIndex>
+        <startLine>67</startLine>
+        <startColumn>68</startColumn>
+        <endLine>67</endLine>
+        <endColumn>73</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>67</line>
+        <index>2811</index>
+        <endIndex>2813</endIndex>
+        <startLine>67</startLine>
+        <startColumn>86</startColumn>
+        <endLine>67</endLine>
+        <endColumn>88</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>68</line>
+        <index>2843</index>
+        <endIndex>2861</endIndex>
+        <startLine>68</startLine>
+        <startColumn>24</startColumn>
+        <endLine>68</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>68</line>
+        <index>2854</index>
+        <endIndex>2859</endIndex>
+        <startLine>68</startLine>
+        <startColumn>35</startColumn>
+        <endLine>68</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>69</line>
+        <index>2889</index>
+        <endIndex>2960</endIndex>
+        <startLine>69</startLine>
+        <startColumn>25</startColumn>
+        <endLine>69</endLine>
+        <endColumn>96</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>69</line>
+        <index>2891</index>
+        <endIndex>2910</endIndex>
+        <startLine>69</startLine>
+        <startColumn>27</startColumn>
+        <endLine>69</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>69</line>
+        <index>2893</index>
+        <endIndex>2899</endIndex>
+        <startLine>69</startLine>
+        <startColumn>29</startColumn>
+        <endLine>69</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>69</line>
+        <index>2903</index>
+        <endIndex>2908</endIndex>
+        <startLine>69</startLine>
+        <startColumn>39</startColumn>
+        <endLine>69</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>69</line>
+        <index>2915</index>
+        <endIndex>2918</endIndex>
+        <startLine>69</startLine>
+        <startColumn>51</startColumn>
+        <endLine>69</endLine>
+        <endColumn>54</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>69</line>
+        <index>2924</index>
+        <endIndex>2943</endIndex>
+        <startLine>69</startLine>
+        <startColumn>60</startColumn>
+        <endLine>69</endLine>
+        <endColumn>79</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>69</line>
+        <index>2926</index>
+        <endIndex>2932</endIndex>
+        <startLine>69</startLine>
+        <startColumn>62</startColumn>
+        <endLine>69</endLine>
+        <endColumn>68</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>69</line>
+        <index>2936</index>
+        <endIndex>2941</endIndex>
+        <startLine>69</startLine>
+        <startColumn>72</startColumn>
+        <endLine>69</endLine>
+        <endColumn>77</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>69</line>
+        <index>2954</index>
+        <endIndex>2957</endIndex>
+        <startLine>69</startLine>
+        <startColumn>90</startColumn>
+        <endLine>69</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>70</line>
+        <index>2988</index>
+        <endIndex>3008</endIndex>
+        <startLine>70</startLine>
+        <startColumn>25</startColumn>
+        <endLine>70</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>70</line>
+        <index>3000</index>
+        <endIndex>3006</endIndex>
+        <startLine>70</startLine>
+        <startColumn>37</startColumn>
+        <endLine>70</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>71</line>
+        <index>3035</index>
+        <endIndex>3106</endIndex>
+        <startLine>71</startLine>
+        <startColumn>24</startColumn>
+        <endLine>71</endLine>
+        <endColumn>95</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>71</line>
+        <index>3037</index>
+        <endIndex>3056</endIndex>
+        <startLine>71</startLine>
+        <startColumn>26</startColumn>
+        <endLine>71</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>71</line>
+        <index>3039</index>
+        <endIndex>3044</endIndex>
+        <startLine>71</startLine>
+        <startColumn>28</startColumn>
+        <endLine>71</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>71</line>
+        <index>3048</index>
+        <endIndex>3054</endIndex>
+        <startLine>71</startLine>
+        <startColumn>37</startColumn>
+        <endLine>71</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>71</line>
+        <index>3061</index>
+        <endIndex>3064</endIndex>
+        <startLine>71</startLine>
+        <startColumn>50</startColumn>
+        <endLine>71</endLine>
+        <endColumn>53</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>71</line>
+        <index>3070</index>
+        <endIndex>3089</endIndex>
+        <startLine>71</startLine>
+        <startColumn>59</startColumn>
+        <endLine>71</endLine>
+        <endColumn>78</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>71</line>
+        <index>3072</index>
+        <endIndex>3077</endIndex>
+        <startLine>71</startLine>
+        <startColumn>61</startColumn>
+        <endLine>71</endLine>
+        <endColumn>66</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>71</line>
+        <index>3081</index>
+        <endIndex>3087</endIndex>
+        <startLine>71</startLine>
+        <startColumn>70</startColumn>
+        <endLine>71</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>71</line>
+        <index>3100</index>
+        <endIndex>3103</endIndex>
+        <startLine>71</startLine>
+        <startColumn>89</startColumn>
+        <endLine>71</endLine>
+        <endColumn>92</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>72</line>
+        <index>3133</index>
+        <endIndex>3151</endIndex>
+        <startLine>72</startLine>
+        <startColumn>24</startColumn>
+        <endLine>72</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>72</line>
+        <index>3144</index>
+        <endIndex>3149</endIndex>
+        <startLine>72</startLine>
+        <startColumn>35</startColumn>
+        <endLine>72</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>73</line>
+        <index>3179</index>
+        <endIndex>3248</endIndex>
+        <startLine>73</startLine>
+        <startColumn>25</startColumn>
+        <endLine>73</endLine>
+        <endColumn>94</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>73</line>
+        <index>3181</index>
+        <endIndex>3200</endIndex>
+        <startLine>73</startLine>
+        <startColumn>27</startColumn>
+        <endLine>73</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>73</line>
+        <index>3183</index>
+        <endIndex>3189</endIndex>
+        <startLine>73</startLine>
+        <startColumn>29</startColumn>
+        <endLine>73</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>73</line>
+        <index>3193</index>
+        <endIndex>3198</endIndex>
+        <startLine>73</startLine>
+        <startColumn>39</startColumn>
+        <endLine>73</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>73</line>
+        <index>3205</index>
+        <endIndex>3207</endIndex>
+        <startLine>73</startLine>
+        <startColumn>51</startColumn>
+        <endLine>73</endLine>
+        <endColumn>53</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>73</line>
+        <index>3213</index>
+        <endIndex>3232</endIndex>
+        <startLine>73</startLine>
+        <startColumn>59</startColumn>
+        <endLine>73</endLine>
+        <endColumn>78</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>73</line>
+        <index>3215</index>
+        <endIndex>3221</endIndex>
+        <startLine>73</startLine>
+        <startColumn>61</startColumn>
+        <endLine>73</endLine>
+        <endColumn>67</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>73</line>
+        <index>3225</index>
+        <endIndex>3230</endIndex>
+        <startLine>73</startLine>
+        <startColumn>71</startColumn>
+        <endLine>73</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>73</line>
+        <index>3243</index>
+        <endIndex>3245</endIndex>
+        <startLine>73</startLine>
+        <startColumn>89</startColumn>
+        <endLine>73</endLine>
+        <endColumn>91</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>74</line>
+        <index>3276</index>
+        <endIndex>3296</endIndex>
+        <startLine>74</startLine>
+        <startColumn>25</startColumn>
+        <endLine>74</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>74</line>
+        <index>3288</index>
+        <endIndex>3294</endIndex>
+        <startLine>74</startLine>
+        <startColumn>37</startColumn>
+        <endLine>74</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>75</line>
+        <index>3323</index>
+        <endIndex>3392</endIndex>
+        <startLine>75</startLine>
+        <startColumn>24</startColumn>
+        <endLine>75</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>75</line>
+        <index>3325</index>
+        <endIndex>3344</endIndex>
+        <startLine>75</startLine>
+        <startColumn>26</startColumn>
+        <endLine>75</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>75</line>
+        <index>3327</index>
+        <endIndex>3332</endIndex>
+        <startLine>75</startLine>
+        <startColumn>28</startColumn>
+        <endLine>75</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>75</line>
+        <index>3336</index>
+        <endIndex>3342</endIndex>
+        <startLine>75</startLine>
+        <startColumn>37</startColumn>
+        <endLine>75</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>75</line>
+        <index>3349</index>
+        <endIndex>3351</endIndex>
+        <startLine>75</startLine>
+        <startColumn>50</startColumn>
+        <endLine>75</endLine>
+        <endColumn>52</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>75</line>
+        <index>3357</index>
+        <endIndex>3376</endIndex>
+        <startLine>75</startLine>
+        <startColumn>58</startColumn>
+        <endLine>75</endLine>
+        <endColumn>77</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>75</line>
+        <index>3359</index>
+        <endIndex>3364</endIndex>
+        <startLine>75</startLine>
+        <startColumn>60</startColumn>
+        <endLine>75</endLine>
+        <endColumn>65</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>75</line>
+        <index>3368</index>
+        <endIndex>3374</endIndex>
+        <startLine>75</startLine>
+        <startColumn>69</startColumn>
+        <endLine>75</endLine>
+        <endColumn>75</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>75</line>
+        <index>3387</index>
+        <endIndex>3389</endIndex>
+        <startLine>75</startLine>
+        <startColumn>88</startColumn>
+        <endLine>75</endLine>
+        <endColumn>90</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>76</line>
+        <index>3419</index>
+        <endIndex>3437</endIndex>
+        <startLine>76</startLine>
+        <startColumn>24</startColumn>
+        <endLine>76</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>76</line>
+        <index>3430</index>
+        <endIndex>3435</endIndex>
+        <startLine>76</startLine>
+        <startColumn>35</startColumn>
+        <endLine>76</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>77</line>
+        <index>3465</index>
+        <endIndex>3536</endIndex>
+        <startLine>77</startLine>
+        <startColumn>25</startColumn>
+        <endLine>77</endLine>
+        <endColumn>96</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>77</line>
+        <index>3467</index>
+        <endIndex>3486</endIndex>
+        <startLine>77</startLine>
+        <startColumn>27</startColumn>
+        <endLine>77</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>77</line>
+        <index>3469</index>
+        <endIndex>3475</endIndex>
+        <startLine>77</startLine>
+        <startColumn>29</startColumn>
+        <endLine>77</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>77</line>
+        <index>3479</index>
+        <endIndex>3484</endIndex>
+        <startLine>77</startLine>
+        <startColumn>39</startColumn>
+        <endLine>77</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>77</line>
+        <index>3491</index>
+        <endIndex>3494</endIndex>
+        <startLine>77</startLine>
+        <startColumn>51</startColumn>
+        <endLine>77</endLine>
+        <endColumn>54</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>77</line>
+        <index>3500</index>
+        <endIndex>3519</endIndex>
+        <startLine>77</startLine>
+        <startColumn>60</startColumn>
+        <endLine>77</endLine>
+        <endColumn>79</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>77</line>
+        <index>3502</index>
+        <endIndex>3508</endIndex>
+        <startLine>77</startLine>
+        <startColumn>62</startColumn>
+        <endLine>77</endLine>
+        <endColumn>68</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>77</line>
+        <index>3512</index>
+        <endIndex>3517</endIndex>
+        <startLine>77</startLine>
+        <startColumn>72</startColumn>
+        <endLine>77</endLine>
+        <endColumn>77</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>77</line>
+        <index>3530</index>
+        <endIndex>3533</endIndex>
+        <startLine>77</startLine>
+        <startColumn>90</startColumn>
+        <endLine>77</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>78</line>
+        <index>3564</index>
+        <endIndex>3584</endIndex>
+        <startLine>78</startLine>
+        <startColumn>25</startColumn>
+        <endLine>78</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>78</line>
+        <index>3576</index>
+        <endIndex>3582</endIndex>
+        <startLine>78</startLine>
+        <startColumn>37</startColumn>
+        <endLine>78</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>79</line>
+        <index>3611</index>
+        <endIndex>3682</endIndex>
+        <startLine>79</startLine>
+        <startColumn>24</startColumn>
+        <endLine>79</endLine>
+        <endColumn>95</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>79</line>
+        <index>3613</index>
+        <endIndex>3632</endIndex>
+        <startLine>79</startLine>
+        <startColumn>26</startColumn>
+        <endLine>79</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>79</line>
+        <index>3615</index>
+        <endIndex>3620</endIndex>
+        <startLine>79</startLine>
+        <startColumn>28</startColumn>
+        <endLine>79</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>79</line>
+        <index>3624</index>
+        <endIndex>3630</endIndex>
+        <startLine>79</startLine>
+        <startColumn>37</startColumn>
+        <endLine>79</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>79</line>
+        <index>3637</index>
+        <endIndex>3640</endIndex>
+        <startLine>79</startLine>
+        <startColumn>50</startColumn>
+        <endLine>79</endLine>
+        <endColumn>53</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>79</line>
+        <index>3646</index>
+        <endIndex>3665</endIndex>
+        <startLine>79</startLine>
+        <startColumn>59</startColumn>
+        <endLine>79</endLine>
+        <endColumn>78</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>79</line>
+        <index>3648</index>
+        <endIndex>3653</endIndex>
+        <startLine>79</startLine>
+        <startColumn>61</startColumn>
+        <endLine>79</endLine>
+        <endColumn>66</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>79</line>
+        <index>3657</index>
+        <endIndex>3663</endIndex>
+        <startLine>79</startLine>
+        <startColumn>70</startColumn>
+        <endLine>79</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>79</line>
+        <index>3676</index>
+        <endIndex>3679</endIndex>
+        <startLine>79</startLine>
+        <startColumn>89</startColumn>
+        <endLine>79</endLine>
+        <endColumn>92</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>80</line>
+        <index>3709</index>
+        <endIndex>3727</endIndex>
+        <startLine>80</startLine>
+        <startColumn>24</startColumn>
+        <endLine>80</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>80</line>
+        <index>3720</index>
+        <endIndex>3725</endIndex>
+        <startLine>80</startLine>
+        <startColumn>35</startColumn>
+        <endLine>80</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>81</line>
+        <index>3755</index>
+        <endIndex>3824</endIndex>
+        <startLine>81</startLine>
+        <startColumn>25</startColumn>
+        <endLine>81</endLine>
+        <endColumn>94</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>81</line>
+        <index>3757</index>
+        <endIndex>3776</endIndex>
+        <startLine>81</startLine>
+        <startColumn>27</startColumn>
+        <endLine>81</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>81</line>
+        <index>3759</index>
+        <endIndex>3765</endIndex>
+        <startLine>81</startLine>
+        <startColumn>29</startColumn>
+        <endLine>81</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>81</line>
+        <index>3769</index>
+        <endIndex>3774</endIndex>
+        <startLine>81</startLine>
+        <startColumn>39</startColumn>
+        <endLine>81</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>81</line>
+        <index>3781</index>
+        <endIndex>3783</endIndex>
+        <startLine>81</startLine>
+        <startColumn>51</startColumn>
+        <endLine>81</endLine>
+        <endColumn>53</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>81</line>
+        <index>3789</index>
+        <endIndex>3808</endIndex>
+        <startLine>81</startLine>
+        <startColumn>59</startColumn>
+        <endLine>81</endLine>
+        <endColumn>78</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>81</line>
+        <index>3791</index>
+        <endIndex>3797</endIndex>
+        <startLine>81</startLine>
+        <startColumn>61</startColumn>
+        <endLine>81</endLine>
+        <endColumn>67</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>81</line>
+        <index>3801</index>
+        <endIndex>3806</endIndex>
+        <startLine>81</startLine>
+        <startColumn>71</startColumn>
+        <endLine>81</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>81</line>
+        <index>3819</index>
+        <endIndex>3821</endIndex>
+        <startLine>81</startLine>
+        <startColumn>89</startColumn>
+        <endLine>81</endLine>
+        <endColumn>91</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>82</line>
+        <index>3852</index>
+        <endIndex>3872</endIndex>
+        <startLine>82</startLine>
+        <startColumn>25</startColumn>
+        <endLine>82</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>82</line>
+        <index>3864</index>
+        <endIndex>3870</endIndex>
+        <startLine>82</startLine>
+        <startColumn>37</startColumn>
+        <endLine>82</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>83</line>
+        <index>3899</index>
+        <endIndex>3968</endIndex>
+        <startLine>83</startLine>
+        <startColumn>24</startColumn>
+        <endLine>83</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>83</line>
+        <index>3901</index>
+        <endIndex>3920</endIndex>
+        <startLine>83</startLine>
+        <startColumn>26</startColumn>
+        <endLine>83</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>83</line>
+        <index>3903</index>
+        <endIndex>3908</endIndex>
+        <startLine>83</startLine>
+        <startColumn>28</startColumn>
+        <endLine>83</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>83</line>
+        <index>3912</index>
+        <endIndex>3918</endIndex>
+        <startLine>83</startLine>
+        <startColumn>37</startColumn>
+        <endLine>83</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>83</line>
+        <index>3925</index>
+        <endIndex>3927</endIndex>
+        <startLine>83</startLine>
+        <startColumn>50</startColumn>
+        <endLine>83</endLine>
+        <endColumn>52</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>83</line>
+        <index>3933</index>
+        <endIndex>3952</endIndex>
+        <startLine>83</startLine>
+        <startColumn>58</startColumn>
+        <endLine>83</endLine>
+        <endColumn>77</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>83</line>
+        <index>3935</index>
+        <endIndex>3940</endIndex>
+        <startLine>83</startLine>
+        <startColumn>60</startColumn>
+        <endLine>83</endLine>
+        <endColumn>65</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>83</line>
+        <index>3944</index>
+        <endIndex>3950</endIndex>
+        <startLine>83</startLine>
+        <startColumn>69</startColumn>
+        <endLine>83</endLine>
+        <endColumn>75</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>83</line>
+        <index>3963</index>
+        <endIndex>3965</endIndex>
+        <startLine>83</startLine>
+        <startColumn>88</startColumn>
+        <endLine>83</endLine>
+        <endColumn>90</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>85</line>
+        <index>3997</index>
+        <endIndex>4015</endIndex>
+        <startLine>85</startLine>
+        <startColumn>24</startColumn>
+        <endLine>85</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>85</line>
+        <index>4008</index>
+        <endIndex>4013</endIndex>
+        <startLine>85</startLine>
+        <startColumn>35</startColumn>
+        <endLine>85</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>86</line>
+        <index>4043</index>
+        <endIndex>4114</endIndex>
+        <startLine>86</startLine>
+        <startColumn>25</startColumn>
+        <endLine>86</endLine>
+        <endColumn>96</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>86</line>
+        <index>4045</index>
+        <endIndex>4064</endIndex>
+        <startLine>86</startLine>
+        <startColumn>27</startColumn>
+        <endLine>86</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>86</line>
+        <index>4047</index>
+        <endIndex>4053</endIndex>
+        <startLine>86</startLine>
+        <startColumn>29</startColumn>
+        <endLine>86</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>86</line>
+        <index>4057</index>
+        <endIndex>4062</endIndex>
+        <startLine>86</startLine>
+        <startColumn>39</startColumn>
+        <endLine>86</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>86</line>
+        <index>4069</index>
+        <endIndex>4072</endIndex>
+        <startLine>86</startLine>
+        <startColumn>51</startColumn>
+        <endLine>86</endLine>
+        <endColumn>54</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>86</line>
+        <index>4078</index>
+        <endIndex>4097</endIndex>
+        <startLine>86</startLine>
+        <startColumn>60</startColumn>
+        <endLine>86</endLine>
+        <endColumn>79</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>86</line>
+        <index>4080</index>
+        <endIndex>4086</endIndex>
+        <startLine>86</startLine>
+        <startColumn>62</startColumn>
+        <endLine>86</endLine>
+        <endColumn>68</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>86</line>
+        <index>4090</index>
+        <endIndex>4095</endIndex>
+        <startLine>86</startLine>
+        <startColumn>72</startColumn>
+        <endLine>86</endLine>
+        <endColumn>77</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>86</line>
+        <index>4108</index>
+        <endIndex>4111</endIndex>
+        <startLine>86</startLine>
+        <startColumn>90</startColumn>
+        <endLine>86</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>87</line>
+        <index>4142</index>
+        <endIndex>4162</endIndex>
+        <startLine>87</startLine>
+        <startColumn>25</startColumn>
+        <endLine>87</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>87</line>
+        <index>4154</index>
+        <endIndex>4160</endIndex>
+        <startLine>87</startLine>
+        <startColumn>37</startColumn>
+        <endLine>87</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>88</line>
+        <index>4189</index>
+        <endIndex>4260</endIndex>
+        <startLine>88</startLine>
+        <startColumn>24</startColumn>
+        <endLine>88</endLine>
+        <endColumn>95</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>88</line>
+        <index>4191</index>
+        <endIndex>4210</endIndex>
+        <startLine>88</startLine>
+        <startColumn>26</startColumn>
+        <endLine>88</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>88</line>
+        <index>4193</index>
+        <endIndex>4198</endIndex>
+        <startLine>88</startLine>
+        <startColumn>28</startColumn>
+        <endLine>88</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>88</line>
+        <index>4202</index>
+        <endIndex>4208</endIndex>
+        <startLine>88</startLine>
+        <startColumn>37</startColumn>
+        <endLine>88</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>88</line>
+        <index>4215</index>
+        <endIndex>4218</endIndex>
+        <startLine>88</startLine>
+        <startColumn>50</startColumn>
+        <endLine>88</endLine>
+        <endColumn>53</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>88</line>
+        <index>4224</index>
+        <endIndex>4243</endIndex>
+        <startLine>88</startLine>
+        <startColumn>59</startColumn>
+        <endLine>88</endLine>
+        <endColumn>78</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>88</line>
+        <index>4226</index>
+        <endIndex>4231</endIndex>
+        <startLine>88</startLine>
+        <startColumn>61</startColumn>
+        <endLine>88</endLine>
+        <endColumn>66</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>88</line>
+        <index>4235</index>
+        <endIndex>4241</endIndex>
+        <startLine>88</startLine>
+        <startColumn>70</startColumn>
+        <endLine>88</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>88</line>
+        <index>4254</index>
+        <endIndex>4257</endIndex>
+        <startLine>88</startLine>
+        <startColumn>89</startColumn>
+        <endLine>88</endLine>
+        <endColumn>92</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>89</line>
+        <index>4287</index>
+        <endIndex>4305</endIndex>
+        <startLine>89</startLine>
+        <startColumn>24</startColumn>
+        <endLine>89</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>89</line>
+        <index>4298</index>
+        <endIndex>4303</endIndex>
+        <startLine>89</startLine>
+        <startColumn>35</startColumn>
+        <endLine>89</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>90</line>
+        <index>4333</index>
+        <endIndex>4402</endIndex>
+        <startLine>90</startLine>
+        <startColumn>25</startColumn>
+        <endLine>90</endLine>
+        <endColumn>94</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>90</line>
+        <index>4335</index>
+        <endIndex>4354</endIndex>
+        <startLine>90</startLine>
+        <startColumn>27</startColumn>
+        <endLine>90</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>90</line>
+        <index>4337</index>
+        <endIndex>4343</endIndex>
+        <startLine>90</startLine>
+        <startColumn>29</startColumn>
+        <endLine>90</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>90</line>
+        <index>4347</index>
+        <endIndex>4352</endIndex>
+        <startLine>90</startLine>
+        <startColumn>39</startColumn>
+        <endLine>90</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>90</line>
+        <index>4359</index>
+        <endIndex>4361</endIndex>
+        <startLine>90</startLine>
+        <startColumn>51</startColumn>
+        <endLine>90</endLine>
+        <endColumn>53</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>90</line>
+        <index>4367</index>
+        <endIndex>4386</endIndex>
+        <startLine>90</startLine>
+        <startColumn>59</startColumn>
+        <endLine>90</endLine>
+        <endColumn>78</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>90</line>
+        <index>4369</index>
+        <endIndex>4375</endIndex>
+        <startLine>90</startLine>
+        <startColumn>61</startColumn>
+        <endLine>90</endLine>
+        <endColumn>67</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>90</line>
+        <index>4379</index>
+        <endIndex>4384</endIndex>
+        <startLine>90</startLine>
+        <startColumn>71</startColumn>
+        <endLine>90</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>90</line>
+        <index>4397</index>
+        <endIndex>4399</endIndex>
+        <startLine>90</startLine>
+        <startColumn>89</startColumn>
+        <endLine>90</endLine>
+        <endColumn>91</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>91</line>
+        <index>4430</index>
+        <endIndex>4450</endIndex>
+        <startLine>91</startLine>
+        <startColumn>25</startColumn>
+        <endLine>91</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>91</line>
+        <index>4442</index>
+        <endIndex>4448</endIndex>
+        <startLine>91</startLine>
+        <startColumn>37</startColumn>
+        <endLine>91</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>92</line>
+        <index>4477</index>
+        <endIndex>4546</endIndex>
+        <startLine>92</startLine>
+        <startColumn>24</startColumn>
+        <endLine>92</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>92</line>
+        <index>4479</index>
+        <endIndex>4498</endIndex>
+        <startLine>92</startLine>
+        <startColumn>26</startColumn>
+        <endLine>92</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>92</line>
+        <index>4481</index>
+        <endIndex>4486</endIndex>
+        <startLine>92</startLine>
+        <startColumn>28</startColumn>
+        <endLine>92</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>92</line>
+        <index>4490</index>
+        <endIndex>4496</endIndex>
+        <startLine>92</startLine>
+        <startColumn>37</startColumn>
+        <endLine>92</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>92</line>
+        <index>4503</index>
+        <endIndex>4505</endIndex>
+        <startLine>92</startLine>
+        <startColumn>50</startColumn>
+        <endLine>92</endLine>
+        <endColumn>52</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>92</line>
+        <index>4511</index>
+        <endIndex>4530</endIndex>
+        <startLine>92</startLine>
+        <startColumn>58</startColumn>
+        <endLine>92</endLine>
+        <endColumn>77</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>92</line>
+        <index>4513</index>
+        <endIndex>4518</endIndex>
+        <startLine>92</startLine>
+        <startColumn>60</startColumn>
+        <endLine>92</endLine>
+        <endColumn>65</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>92</line>
+        <index>4522</index>
+        <endIndex>4528</endIndex>
+        <startLine>92</startLine>
+        <startColumn>69</startColumn>
+        <endLine>92</endLine>
+        <endColumn>75</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>92</line>
+        <index>4541</index>
+        <endIndex>4543</endIndex>
+        <startLine>92</startLine>
+        <startColumn>88</startColumn>
+        <endLine>92</endLine>
+        <endColumn>90</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>93</line>
+        <index>4573</index>
+        <endIndex>4591</endIndex>
+        <startLine>93</startLine>
+        <startColumn>24</startColumn>
+        <endLine>93</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>93</line>
+        <index>4584</index>
+        <endIndex>4589</endIndex>
+        <startLine>93</startLine>
+        <startColumn>35</startColumn>
+        <endLine>93</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>94</line>
+        <index>4619</index>
+        <endIndex>4690</endIndex>
+        <startLine>94</startLine>
+        <startColumn>25</startColumn>
+        <endLine>94</endLine>
+        <endColumn>96</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>94</line>
+        <index>4621</index>
+        <endIndex>4640</endIndex>
+        <startLine>94</startLine>
+        <startColumn>27</startColumn>
+        <endLine>94</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>94</line>
+        <index>4623</index>
+        <endIndex>4629</endIndex>
+        <startLine>94</startLine>
+        <startColumn>29</startColumn>
+        <endLine>94</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>94</line>
+        <index>4633</index>
+        <endIndex>4638</endIndex>
+        <startLine>94</startLine>
+        <startColumn>39</startColumn>
+        <endLine>94</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>94</line>
+        <index>4645</index>
+        <endIndex>4648</endIndex>
+        <startLine>94</startLine>
+        <startColumn>51</startColumn>
+        <endLine>94</endLine>
+        <endColumn>54</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>94</line>
+        <index>4654</index>
+        <endIndex>4673</endIndex>
+        <startLine>94</startLine>
+        <startColumn>60</startColumn>
+        <endLine>94</endLine>
+        <endColumn>79</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>94</line>
+        <index>4656</index>
+        <endIndex>4662</endIndex>
+        <startLine>94</startLine>
+        <startColumn>62</startColumn>
+        <endLine>94</endLine>
+        <endColumn>68</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>94</line>
+        <index>4666</index>
+        <endIndex>4671</endIndex>
+        <startLine>94</startLine>
+        <startColumn>72</startColumn>
+        <endLine>94</endLine>
+        <endColumn>77</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>94</line>
+        <index>4684</index>
+        <endIndex>4687</endIndex>
+        <startLine>94</startLine>
+        <startColumn>90</startColumn>
+        <endLine>94</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>95</line>
+        <index>4718</index>
+        <endIndex>4738</endIndex>
+        <startLine>95</startLine>
+        <startColumn>25</startColumn>
+        <endLine>95</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>95</line>
+        <index>4730</index>
+        <endIndex>4736</endIndex>
+        <startLine>95</startLine>
+        <startColumn>37</startColumn>
+        <endLine>95</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>96</line>
+        <index>4765</index>
+        <endIndex>4836</endIndex>
+        <startLine>96</startLine>
+        <startColumn>24</startColumn>
+        <endLine>96</endLine>
+        <endColumn>95</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>96</line>
+        <index>4767</index>
+        <endIndex>4786</endIndex>
+        <startLine>96</startLine>
+        <startColumn>26</startColumn>
+        <endLine>96</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>96</line>
+        <index>4769</index>
+        <endIndex>4774</endIndex>
+        <startLine>96</startLine>
+        <startColumn>28</startColumn>
+        <endLine>96</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>96</line>
+        <index>4778</index>
+        <endIndex>4784</endIndex>
+        <startLine>96</startLine>
+        <startColumn>37</startColumn>
+        <endLine>96</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>96</line>
+        <index>4791</index>
+        <endIndex>4794</endIndex>
+        <startLine>96</startLine>
+        <startColumn>50</startColumn>
+        <endLine>96</endLine>
+        <endColumn>53</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>96</line>
+        <index>4800</index>
+        <endIndex>4819</endIndex>
+        <startLine>96</startLine>
+        <startColumn>59</startColumn>
+        <endLine>96</endLine>
+        <endColumn>78</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>96</line>
+        <index>4802</index>
+        <endIndex>4807</endIndex>
+        <startLine>96</startLine>
+        <startColumn>61</startColumn>
+        <endLine>96</endLine>
+        <endColumn>66</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>96</line>
+        <index>4811</index>
+        <endIndex>4817</endIndex>
+        <startLine>96</startLine>
+        <startColumn>70</startColumn>
+        <endLine>96</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>96</line>
+        <index>4830</index>
+        <endIndex>4833</endIndex>
+        <startLine>96</startLine>
+        <startColumn>89</startColumn>
+        <endLine>96</endLine>
+        <endColumn>92</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>97</line>
+        <index>4863</index>
+        <endIndex>4881</endIndex>
+        <startLine>97</startLine>
+        <startColumn>24</startColumn>
+        <endLine>97</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>97</line>
+        <index>4874</index>
+        <endIndex>4879</endIndex>
+        <startLine>97</startLine>
+        <startColumn>35</startColumn>
+        <endLine>97</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>98</line>
+        <index>4909</index>
+        <endIndex>4978</endIndex>
+        <startLine>98</startLine>
+        <startColumn>25</startColumn>
+        <endLine>98</endLine>
+        <endColumn>94</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>98</line>
+        <index>4911</index>
+        <endIndex>4930</endIndex>
+        <startLine>98</startLine>
+        <startColumn>27</startColumn>
+        <endLine>98</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>98</line>
+        <index>4913</index>
+        <endIndex>4919</endIndex>
+        <startLine>98</startLine>
+        <startColumn>29</startColumn>
+        <endLine>98</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>98</line>
+        <index>4923</index>
+        <endIndex>4928</endIndex>
+        <startLine>98</startLine>
+        <startColumn>39</startColumn>
+        <endLine>98</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>98</line>
+        <index>4935</index>
+        <endIndex>4937</endIndex>
+        <startLine>98</startLine>
+        <startColumn>51</startColumn>
+        <endLine>98</endLine>
+        <endColumn>53</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>98</line>
+        <index>4943</index>
+        <endIndex>4962</endIndex>
+        <startLine>98</startLine>
+        <startColumn>59</startColumn>
+        <endLine>98</endLine>
+        <endColumn>78</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>98</line>
+        <index>4945</index>
+        <endIndex>4951</endIndex>
+        <startLine>98</startLine>
+        <startColumn>61</startColumn>
+        <endLine>98</endLine>
+        <endColumn>67</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>98</line>
+        <index>4955</index>
+        <endIndex>4960</endIndex>
+        <startLine>98</startLine>
+        <startColumn>71</startColumn>
+        <endLine>98</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>98</line>
+        <index>4973</index>
+        <endIndex>4975</endIndex>
+        <startLine>98</startLine>
+        <startColumn>89</startColumn>
+        <endLine>98</endLine>
+        <endColumn>91</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>99</line>
+        <index>5006</index>
+        <endIndex>5026</endIndex>
+        <startLine>99</startLine>
+        <startColumn>25</startColumn>
+        <endLine>99</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>99</line>
+        <index>5018</index>
+        <endIndex>5024</endIndex>
+        <startLine>99</startLine>
+        <startColumn>37</startColumn>
+        <endLine>99</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>100</line>
+        <index>5053</index>
+        <endIndex>5122</endIndex>
+        <startLine>100</startLine>
+        <startColumn>24</startColumn>
+        <endLine>100</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>100</line>
+        <index>5055</index>
+        <endIndex>5074</endIndex>
+        <startLine>100</startLine>
+        <startColumn>26</startColumn>
+        <endLine>100</endLine>
+        <endColumn>45</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>100</line>
+        <index>5057</index>
+        <endIndex>5062</endIndex>
+        <startLine>100</startLine>
+        <startColumn>28</startColumn>
+        <endLine>100</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>100</line>
+        <index>5066</index>
+        <endIndex>5072</endIndex>
+        <startLine>100</startLine>
+        <startColumn>37</startColumn>
+        <endLine>100</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>100</line>
+        <index>5079</index>
+        <endIndex>5081</endIndex>
+        <startLine>100</startLine>
+        <startColumn>50</startColumn>
+        <endLine>100</endLine>
+        <endColumn>52</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>100</line>
+        <index>5087</index>
+        <endIndex>5106</endIndex>
+        <startLine>100</startLine>
+        <startColumn>58</startColumn>
+        <endLine>100</endLine>
+        <endColumn>77</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>100</line>
+        <index>5089</index>
+        <endIndex>5094</endIndex>
+        <startLine>100</startLine>
+        <startColumn>60</startColumn>
+        <endLine>100</endLine>
+        <endColumn>65</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>100</line>
+        <index>5098</index>
+        <endIndex>5104</endIndex>
+        <startLine>100</startLine>
+        <startColumn>69</startColumn>
+        <endLine>100</endLine>
+        <endColumn>75</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>100</line>
+        <index>5117</index>
+        <endIndex>5119</endIndex>
+        <startLine>100</startLine>
+        <startColumn>88</startColumn>
+        <endLine>100</endLine>
+        <endColumn>90</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>101</line>
+        <index>5149</index>
+        <endIndex>5167</endIndex>
+        <startLine>101</startLine>
+        <startColumn>24</startColumn>
+        <endLine>101</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>101</line>
+        <index>5160</index>
+        <endIndex>5165</endIndex>
+        <startLine>101</startLine>
+        <startColumn>35</startColumn>
+        <endLine>101</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>102</line>
+        <index>5195</index>
+        <endIndex>5266</endIndex>
+        <startLine>102</startLine>
+        <startColumn>25</startColumn>
+        <endLine>102</endLine>
+        <endColumn>96</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>102</line>
+        <index>5197</index>
+        <endIndex>5216</endIndex>
+        <startLine>102</startLine>
+        <startColumn>27</startColumn>
+        <endLine>102</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>102</line>
+        <index>5199</index>
+        <endIndex>5205</endIndex>
+        <startLine>102</startLine>
+        <startColumn>29</startColumn>
+        <endLine>102</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>102</line>
+        <index>5209</index>
+        <endIndex>5214</endIndex>
+        <startLine>102</startLine>
+        <startColumn>39</startColumn>
+        <endLine>102</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>102</line>
+        <index>5221</index>
+        <endIndex>5224</endIndex>
+        <startLine>102</startLine>
+        <startColumn>51</startColumn>
+        <endLine>102</endLine>
+        <endColumn>54</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>102</line>
+        <index>5230</index>
+        <endIndex>5249</endIndex>
+        <startLine>102</startLine>
+        <startColumn>60</startColumn>
+        <endLine>102</endLine>
+        <endColumn>79</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>102</line>
+        <index>5232</index>
+        <endIndex>5238</endIndex>
+        <startLine>102</startLine>
+        <startColumn>62</startColumn>
+        <endLine>102</endLine>
+        <endColumn>68</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>102</line>
+        <index>5242</index>
+        <endIndex>5247</endIndex>
+        <startLine>102</startLine>
+        <startColumn>72</startColumn>
+        <endLine>102</endLine>
+        <endColumn>77</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>102</line>
+        <index>5260</index>
+        <endIndex>5263</endIndex>
+        <startLine>102</startLine>
+        <startColumn>90</startColumn>
+        <endLine>102</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>103</line>
+        <index>5293</index>
+        <endIndex>5312</endIndex>
+        <startLine>103</startLine>
+        <startColumn>24</startColumn>
+        <endLine>103</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>103</line>
+        <index>5304</index>
+        <endIndex>5310</endIndex>
+        <startLine>103</startLine>
+        <startColumn>35</startColumn>
+        <endLine>103</endLine>
+        <endColumn>41</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>104</line>
+        <index>5339</index>
+        <endIndex>5408</endIndex>
+        <startLine>104</startLine>
+        <startColumn>24</startColumn>
+        <endLine>104</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>104</line>
+        <index>5341</index>
+        <endIndex>5359</endIndex>
+        <startLine>104</startLine>
+        <startColumn>26</startColumn>
+        <endLine>104</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>104</line>
+        <index>5343</index>
+        <endIndex>5348</endIndex>
+        <startLine>104</startLine>
+        <startColumn>28</startColumn>
+        <endLine>104</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>104</line>
+        <index>5352</index>
+        <endIndex>5357</endIndex>
+        <startLine>104</startLine>
+        <startColumn>37</startColumn>
+        <endLine>104</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>104</line>
+        <index>5364</index>
+        <endIndex>5367</endIndex>
+        <startLine>104</startLine>
+        <startColumn>49</startColumn>
+        <endLine>104</endLine>
+        <endColumn>52</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>104</line>
+        <index>5373</index>
+        <endIndex>5391</endIndex>
+        <startLine>104</startLine>
+        <startColumn>58</startColumn>
+        <endLine>104</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>104</line>
+        <index>5375</index>
+        <endIndex>5380</endIndex>
+        <startLine>104</startLine>
+        <startColumn>60</startColumn>
+        <endLine>104</endLine>
+        <endColumn>65</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>104</line>
+        <index>5384</index>
+        <endIndex>5389</endIndex>
+        <startLine>104</startLine>
+        <startColumn>69</startColumn>
+        <endLine>104</endLine>
+        <endColumn>74</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>104</line>
+        <index>5402</index>
+        <endIndex>5405</endIndex>
+        <startLine>104</startLine>
+        <startColumn>87</startColumn>
+        <endLine>104</endLine>
+        <endColumn>90</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>105</line>
+        <index>5435</index>
+        <endIndex>5453</endIndex>
+        <startLine>105</startLine>
+        <startColumn>24</startColumn>
+        <endLine>105</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>105</line>
+        <index>5446</index>
+        <endIndex>5451</endIndex>
+        <startLine>105</startLine>
+        <startColumn>35</startColumn>
+        <endLine>105</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>106</line>
+        <index>5481</index>
+        <endIndex>5550</endIndex>
+        <startLine>106</startLine>
+        <startColumn>25</startColumn>
+        <endLine>106</endLine>
+        <endColumn>94</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>106</line>
+        <index>5483</index>
+        <endIndex>5502</endIndex>
+        <startLine>106</startLine>
+        <startColumn>27</startColumn>
+        <endLine>106</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>106</line>
+        <index>5485</index>
+        <endIndex>5491</endIndex>
+        <startLine>106</startLine>
+        <startColumn>29</startColumn>
+        <endLine>106</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>106</line>
+        <index>5495</index>
+        <endIndex>5500</endIndex>
+        <startLine>106</startLine>
+        <startColumn>39</startColumn>
+        <endLine>106</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>106</line>
+        <index>5507</index>
+        <endIndex>5509</endIndex>
+        <startLine>106</startLine>
+        <startColumn>51</startColumn>
+        <endLine>106</endLine>
+        <endColumn>53</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>106</line>
+        <index>5515</index>
+        <endIndex>5534</endIndex>
+        <startLine>106</startLine>
+        <startColumn>59</startColumn>
+        <endLine>106</endLine>
+        <endColumn>78</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>106</line>
+        <index>5517</index>
+        <endIndex>5523</endIndex>
+        <startLine>106</startLine>
+        <startColumn>61</startColumn>
+        <endLine>106</endLine>
+        <endColumn>67</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>106</line>
+        <index>5527</index>
+        <endIndex>5532</endIndex>
+        <startLine>106</startLine>
+        <startColumn>71</startColumn>
+        <endLine>106</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>106</line>
+        <index>5545</index>
+        <endIndex>5547</endIndex>
+        <startLine>106</startLine>
+        <startColumn>89</startColumn>
+        <endLine>106</endLine>
+        <endColumn>91</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>107</line>
+        <index>5577</index>
+        <endIndex>5596</endIndex>
+        <startLine>107</startLine>
+        <startColumn>24</startColumn>
+        <endLine>107</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>107</line>
+        <index>5588</index>
+        <endIndex>5594</endIndex>
+        <startLine>107</startLine>
+        <startColumn>35</startColumn>
+        <endLine>107</endLine>
+        <endColumn>41</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>108</line>
+        <index>5623</index>
+        <endIndex>5690</endIndex>
+        <startLine>108</startLine>
+        <startColumn>24</startColumn>
+        <endLine>108</endLine>
+        <endColumn>91</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>108</line>
+        <index>5625</index>
+        <endIndex>5643</endIndex>
+        <startLine>108</startLine>
+        <startColumn>26</startColumn>
+        <endLine>108</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>108</line>
+        <index>5627</index>
+        <endIndex>5632</endIndex>
+        <startLine>108</startLine>
+        <startColumn>28</startColumn>
+        <endLine>108</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>108</line>
+        <index>5636</index>
+        <endIndex>5641</endIndex>
+        <startLine>108</startLine>
+        <startColumn>37</startColumn>
+        <endLine>108</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>108</line>
+        <index>5648</index>
+        <endIndex>5650</endIndex>
+        <startLine>108</startLine>
+        <startColumn>49</startColumn>
+        <endLine>108</endLine>
+        <endColumn>51</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>108</line>
+        <index>5656</index>
+        <endIndex>5674</endIndex>
+        <startLine>108</startLine>
+        <startColumn>57</startColumn>
+        <endLine>108</endLine>
+        <endColumn>75</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>108</line>
+        <index>5658</index>
+        <endIndex>5663</endIndex>
+        <startLine>108</startLine>
+        <startColumn>59</startColumn>
+        <endLine>108</endLine>
+        <endColumn>64</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>108</line>
+        <index>5667</index>
+        <endIndex>5672</endIndex>
+        <startLine>108</startLine>
+        <startColumn>68</startColumn>
+        <endLine>108</endLine>
+        <endColumn>73</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>108</line>
+        <index>5685</index>
+        <endIndex>5687</endIndex>
+        <startLine>108</startLine>
+        <startColumn>86</startColumn>
+        <endLine>108</endLine>
+        <endColumn>88</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>109</line>
+        <index>5717</index>
+        <endIndex>5735</endIndex>
+        <startLine>109</startLine>
+        <startColumn>24</startColumn>
+        <endLine>109</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>109</line>
+        <index>5728</index>
+        <endIndex>5733</endIndex>
+        <startLine>109</startLine>
+        <startColumn>35</startColumn>
+        <endLine>109</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>110</line>
+        <index>5763</index>
+        <endIndex>5834</endIndex>
+        <startLine>110</startLine>
+        <startColumn>25</startColumn>
+        <endLine>110</endLine>
+        <endColumn>96</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>110</line>
+        <index>5765</index>
+        <endIndex>5784</endIndex>
+        <startLine>110</startLine>
+        <startColumn>27</startColumn>
+        <endLine>110</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>110</line>
+        <index>5767</index>
+        <endIndex>5773</endIndex>
+        <startLine>110</startLine>
+        <startColumn>29</startColumn>
+        <endLine>110</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>110</line>
+        <index>5777</index>
+        <endIndex>5782</endIndex>
+        <startLine>110</startLine>
+        <startColumn>39</startColumn>
+        <endLine>110</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>110</line>
+        <index>5789</index>
+        <endIndex>5792</endIndex>
+        <startLine>110</startLine>
+        <startColumn>51</startColumn>
+        <endLine>110</endLine>
+        <endColumn>54</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>110</line>
+        <index>5798</index>
+        <endIndex>5817</endIndex>
+        <startLine>110</startLine>
+        <startColumn>60</startColumn>
+        <endLine>110</endLine>
+        <endColumn>79</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>110</line>
+        <index>5800</index>
+        <endIndex>5806</endIndex>
+        <startLine>110</startLine>
+        <startColumn>62</startColumn>
+        <endLine>110</endLine>
+        <endColumn>68</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>110</line>
+        <index>5810</index>
+        <endIndex>5815</endIndex>
+        <startLine>110</startLine>
+        <startColumn>72</startColumn>
+        <endLine>110</endLine>
+        <endColumn>77</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>110</line>
+        <index>5828</index>
+        <endIndex>5831</endIndex>
+        <startLine>110</startLine>
+        <startColumn>90</startColumn>
+        <endLine>110</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>111</line>
+        <index>5861</index>
+        <endIndex>5880</endIndex>
+        <startLine>111</startLine>
+        <startColumn>24</startColumn>
+        <endLine>111</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>111</line>
+        <index>5872</index>
+        <endIndex>5878</endIndex>
+        <startLine>111</startLine>
+        <startColumn>35</startColumn>
+        <endLine>111</endLine>
+        <endColumn>41</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>112</line>
+        <index>5907</index>
+        <endIndex>5976</endIndex>
+        <startLine>112</startLine>
+        <startColumn>24</startColumn>
+        <endLine>112</endLine>
+        <endColumn>93</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>112</line>
+        <index>5909</index>
+        <endIndex>5927</endIndex>
+        <startLine>112</startLine>
+        <startColumn>26</startColumn>
+        <endLine>112</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>112</line>
+        <index>5911</index>
+        <endIndex>5916</endIndex>
+        <startLine>112</startLine>
+        <startColumn>28</startColumn>
+        <endLine>112</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>112</line>
+        <index>5920</index>
+        <endIndex>5925</endIndex>
+        <startLine>112</startLine>
+        <startColumn>37</startColumn>
+        <endLine>112</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>112</line>
+        <index>5932</index>
+        <endIndex>5935</endIndex>
+        <startLine>112</startLine>
+        <startColumn>49</startColumn>
+        <endLine>112</endLine>
+        <endColumn>52</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>112</line>
+        <index>5941</index>
+        <endIndex>5959</endIndex>
+        <startLine>112</startLine>
+        <startColumn>58</startColumn>
+        <endLine>112</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>112</line>
+        <index>5943</index>
+        <endIndex>5948</endIndex>
+        <startLine>112</startLine>
+        <startColumn>60</startColumn>
+        <endLine>112</endLine>
+        <endColumn>65</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>112</line>
+        <index>5952</index>
+        <endIndex>5957</endIndex>
+        <startLine>112</startLine>
+        <startColumn>69</startColumn>
+        <endLine>112</endLine>
+        <endColumn>74</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>112</line>
+        <index>5970</index>
+        <endIndex>5973</endIndex>
+        <startLine>112</startLine>
+        <startColumn>87</startColumn>
+        <endLine>112</endLine>
+        <endColumn>90</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>113</line>
+        <index>6003</index>
+        <endIndex>6021</endIndex>
+        <startLine>113</startLine>
+        <startColumn>24</startColumn>
+        <endLine>113</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>113</line>
+        <index>6014</index>
+        <endIndex>6019</endIndex>
+        <startLine>113</startLine>
+        <startColumn>35</startColumn>
+        <endLine>113</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>114</line>
+        <index>6049</index>
+        <endIndex>6118</endIndex>
+        <startLine>114</startLine>
+        <startColumn>25</startColumn>
+        <endLine>114</endLine>
+        <endColumn>94</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>114</line>
+        <index>6051</index>
+        <endIndex>6070</endIndex>
+        <startLine>114</startLine>
+        <startColumn>27</startColumn>
+        <endLine>114</endLine>
+        <endColumn>46</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>114</line>
+        <index>6053</index>
+        <endIndex>6059</endIndex>
+        <startLine>114</startLine>
+        <startColumn>29</startColumn>
+        <endLine>114</endLine>
+        <endColumn>35</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>114</line>
+        <index>6063</index>
+        <endIndex>6068</endIndex>
+        <startLine>114</startLine>
+        <startColumn>39</startColumn>
+        <endLine>114</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>114</line>
+        <index>6075</index>
+        <endIndex>6077</endIndex>
+        <startLine>114</startLine>
+        <startColumn>51</startColumn>
+        <endLine>114</endLine>
+        <endColumn>53</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>114</line>
+        <index>6083</index>
+        <endIndex>6102</endIndex>
+        <startLine>114</startLine>
+        <startColumn>59</startColumn>
+        <endLine>114</endLine>
+        <endColumn>78</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>114</line>
+        <index>6085</index>
+        <endIndex>6091</endIndex>
+        <startLine>114</startLine>
+        <startColumn>61</startColumn>
+        <endLine>114</endLine>
+        <endColumn>67</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>114</line>
+        <index>6095</index>
+        <endIndex>6100</endIndex>
+        <startLine>114</startLine>
+        <startColumn>71</startColumn>
+        <endLine>114</endLine>
+        <endColumn>76</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>114</line>
+        <index>6113</index>
+        <endIndex>6115</endIndex>
+        <startLine>114</startLine>
+        <startColumn>89</startColumn>
+        <endLine>114</endLine>
+        <endColumn>91</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>115</line>
+        <index>6145</index>
+        <endIndex>6164</endIndex>
+        <startLine>115</startLine>
+        <startColumn>24</startColumn>
+        <endLine>115</endLine>
+        <endColumn>43</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>115</line>
+        <index>6156</index>
+        <endIndex>6162</endIndex>
+        <startLine>115</startLine>
+        <startColumn>35</startColumn>
+        <endLine>115</endLine>
+        <endColumn>41</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>116</line>
+        <index>6191</index>
+        <endIndex>6258</endIndex>
+        <startLine>116</startLine>
+        <startColumn>24</startColumn>
+        <endLine>116</endLine>
+        <endColumn>91</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>116</line>
+        <index>6193</index>
+        <endIndex>6211</endIndex>
+        <startLine>116</startLine>
+        <startColumn>26</startColumn>
+        <endLine>116</endLine>
+        <endColumn>44</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>116</line>
+        <index>6195</index>
+        <endIndex>6200</endIndex>
+        <startLine>116</startLine>
+        <startColumn>28</startColumn>
+        <endLine>116</endLine>
+        <endColumn>33</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>116</line>
+        <index>6204</index>
+        <endIndex>6209</endIndex>
+        <startLine>116</startLine>
+        <startColumn>37</startColumn>
+        <endLine>116</endLine>
+        <endColumn>42</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>116</line>
+        <index>6216</index>
+        <endIndex>6218</endIndex>
+        <startLine>116</startLine>
+        <startColumn>49</startColumn>
+        <endLine>116</endLine>
+        <endColumn>51</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>116</line>
+        <index>6224</index>
+        <endIndex>6242</endIndex>
+        <startLine>116</startLine>
+        <startColumn>57</startColumn>
+        <endLine>116</endLine>
+        <endColumn>75</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>116</line>
+        <index>6226</index>
+        <endIndex>6231</endIndex>
+        <startLine>116</startLine>
+        <startColumn>59</startColumn>
+        <endLine>116</endLine>
+        <endColumn>64</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>116</line>
+        <index>6235</index>
+        <endIndex>6240</endIndex>
+        <startLine>116</startLine>
+        <startColumn>68</startColumn>
+        <endLine>116</endLine>
+        <endColumn>73</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>116</line>
+        <index>6253</index>
+        <endIndex>6255</endIndex>
+        <startLine>116</startLine>
+        <startColumn>86</startColumn>
+        <endLine>116</endLine>
+        <endColumn>88</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.MaintainabilityRules" rule="StatementMustNotUseUnnecessaryParenthesis" ruleCheckId="SA1119">
+        <context>The line contains unnecessary parenthesis.</context>
+        <line>121</line>
+        <index>6355</index>
+        <endIndex>6371</endIndex>
+        <startLine>121</startLine>
+        <startColumn>24</startColumn>
+        <endLine>121</endLine>
+        <endColumn>40</endColumn>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>127</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketMustBeFollowedByBlankLine" ruleCheckId="SA1513">
+        <context>Statements or elements wrapped in curly brackets must be followed by a blank line.</context>
+        <line>134</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>139</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>148</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>154</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CurlyBracketsMustNotBeOmitted" ruleCheckId="SA1503">
+        <context>The body of the if statement must be wrapped in opening and closing curly brackets.</context>
+        <line>156</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CurlyBracketsMustNotBeOmitted" ruleCheckId="SA1503">
+        <context>The body of the if statement must be wrapped in opening and closing curly brackets.</context>
+        <line>162</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.DocumentationRules" rule="ElementsMustBeDocumented" ruleCheckId="SA1600">
+        <context>The method must have a documentation header.</context>
+        <line>167</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="CurlyBracketsMustNotBeOmitted" ruleCheckId="SA1503">
+        <context>The body of the for statement must be wrapped in opening and closing curly brackets.</context>
+        <line>174</line>
+        <warning>False</warning>
+      </violation>
+      <violation namespace="StyleCop.CSharp.LayoutRules" rule="ClosingCurlyBracketMustBeFollowedByBlankLine" ruleCheckId="SA1513">
+        <context>Statements or elements wrapped in curly brackets must be followed by a blank line.</context>
+        <line>172</line>
+        <warning>False</warning>
+      </violation>
+    </violations>
+  </sourcecode>
+</stylecopresultscache>

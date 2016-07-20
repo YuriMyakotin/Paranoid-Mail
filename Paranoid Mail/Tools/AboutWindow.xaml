@@ -1,0 +1,109 @@
+﻿<Window x:Class="Paranoid.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="About"
+        Background="#FFF0F8FF"
+        ResizeMode="NoResize"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
+	<Grid Margin="10">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+		</Grid.RowDefinitions>
+		<Grid Row="0">
+			<StackPanel Orientation="Horizontal">
+				<Image Width="100"
+				       Height="100"
+				       VerticalAlignment="Center"
+				       Source="{StaticResource PMLogoIcon}" />
+				<StackPanel Margin="10,0,0,0" Orientation="Vertical">
+					<TextBlock x:Name="SoftwareName"
+					           FontSize="18"
+					           FontWeight="Bold" />
+					<TextBlock x:Name="SoftwareVersion" />
+					<TextBlock Text="Designed by Yuri Myakotin, 2016" />
+					<StackPanel Margin="0,20,0,0" Orientation="Horizontal">
+						<TextBlock Width="100"
+						           Text="Project website:"
+						           TextWrapping="Wrap" />
+						<TextBlock VerticalAlignment="Center" FontWeight="Bold">
+							<Hyperlink NavigateUri="https://paranoid.ym-com.net" RequestNavigate="Hyperlink_OnRequestNavigate">https://paranoid.ym-com.net</Hyperlink>
+						</TextBlock>
+					</StackPanel>
+				</StackPanel>
+			</StackPanel>
+		</Grid>
+		<Grid Row="1">
+			<GroupBox Margin="0,10,0,0"
+			          Background="White"
+			          BorderBrush="#FF00A0FF"
+			          BorderThickness="2"
+			          Header="3rd party code used:">
+				<StackPanel Margin="15">
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Width="260" Text="Threefish cipher and Skein1024 hash function" />
+						<TextBlock FontWeight="Bold">
+							<Hyperlink NavigateUri="https://github.com/nitrocaster/SkeinFish" RequestNavigate="Hyperlink_OnRequestNavigate">SkeinFish</Hyperlink>
+						</TextBlock>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Width="260" Text="Blake, Keccak and Skein hash functions" />
+						<TextBlock FontWeight="Bold">
+							<Hyperlink NavigateUri="https://hashlib.codeplex.com/SourceControl/latest" RequestNavigate="Hyperlink_OnRequestNavigate">HashLib</Hyperlink>
+						</TextBlock>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Width="260"
+						           Text="Curve25519 and Edd25519 key exchange and signing functions"
+						           TextWrapping="Wrap" />
+						<TextBlock FontWeight="Bold">
+							<Hyperlink NavigateUri="https://github.com/CodesInChaos/Chaos.NaCl" RequestNavigate="Hyperlink_OnRequestNavigate">Chaos.NaCl</Hyperlink>
+						</TextBlock>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Width="260" Text="Dapper simple object mapper for .Net" />
+						<TextBlock FontWeight="Bold">
+							<Hyperlink NavigateUri="https://github.com/StackExchange/dapper-dot-net" RequestNavigate="Hyperlink_OnRequestNavigate">Dapper-dot-net</Hyperlink>
+						</TextBlock>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Width="260" Text="Protobuf.NET serialization library" />
+						<TextBlock FontWeight="Bold">
+							<Hyperlink NavigateUri="https://github.com/mgravell/protobuf-net" RequestNavigate="Hyperlink_OnRequestNavigate">Protobuf-net</Hyperlink>
+						</TextBlock>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Width="260" Text="LZMA compression" />
+						<TextBlock FontWeight="Bold">
+							<Hyperlink NavigateUri="http://www.7-zip.org/sdk.html" RequestNavigate="Hyperlink_OnRequestNavigate">7-Zip SDK</Hyperlink>
+						</TextBlock>
+					</StackPanel>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Width="260" Text="LZMA Helper class" />
+						<TextBlock FontWeight="Bold">
+							<Hyperlink NavigateUri="https://github.com/episage/LZMA-compression" RequestNavigate="Hyperlink_OnRequestNavigate">SevenZipHelper</Hyperlink>
+						</TextBlock>
+					</StackPanel>
+					<StackPanel Margin="0,10,0,0" Orientation="Horizontal">
+						<TextBlock Width="260" Text="Vector icons based on SVG images from " />
+						<TextBlock FontWeight="Bold">
+							<Hyperlink NavigateUri="http://www.flaticon.com/" RequestNavigate="Hyperlink_OnRequestNavigate">FlatIcon</Hyperlink>
+						</TextBlock>
+					</StackPanel>
+				</StackPanel>
+			</GroupBox>
+		</Grid>
+		<Grid Margin="0,10,0,0"
+		      HorizontalAlignment="Right"
+		      Row="2">
+			<Button Background="#FFF0F8FF"
+			        BorderBrush="#FF00A0FF"
+			        Content="OK"
+			        IsCancel="True"
+			        IsDefault="True" />
+		</Grid>
+	</Grid>
+</Window>

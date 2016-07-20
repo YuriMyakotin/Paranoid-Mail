@@ -1,0 +1,54 @@
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\Paranoid Mail.exe.config
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\Paranoid Mail.exe
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\Paranoid Mail.pdb
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\ParanoidShared.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\protobuf-net.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\System.Data.SQLite.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\Xceed.Wpf.AvalonDock.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\Xceed.Wpf.DataGrid.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\Xceed.Wpf.Toolkit.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\ParanoidShared.pdb
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\protobuf-net.pdb
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\protobuf-net.xml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\System.Data.SQLite.xml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\Paranoid Mail.csprojResolveAssemblyReference.cache
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\Accounts-contacts-keys\AccountsWindow.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\RegisterAccount\CaptchaDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\StartupDialogs\EnterPasswordDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\StartupDialogs\FirstTimeQuestionWindow.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\MainWindow.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\StartupDialogs\OpenExistingKeyFileDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\RegisterAccount\RegisterAccount.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\StartupDialogs\SetKeyFileLocationDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\StartupDialogs\SetPasswordWindow.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\App.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\Paranoid Mail_MarkupCompile.cache
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\Paranoid Mail_MarkupCompile.lref
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\App.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\Accounts-contacts-keys\AccountsWindow.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\RegisterAccount\CaptchaDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\StartupDialogs\EnterPasswordDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\StartupDialogs\FirstTimeQuestionWindow.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\MainWindow.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\StartupDialogs\OpenExistingKeyFileDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\RegisterAccount\RegisterAccount.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\StartupDialogs\SetKeyFileLocationDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\StartupDialogs\SetPasswordWindow.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\Paranoid Mail.g.resources
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\Paranoid.Properties.Resources.resources
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\Paranoid Mail.csproj.GenerateResource.Cache
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\Paranoid Mail.exe
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Debug\Paranoid Mail.pdb

@@ -1,0 +1,94 @@
+﻿<Window x:Class="Paranoid.EditAccountDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Paranoid"
+        Title="Edit account settings"
+        Background="{StaticResource BgColor}"
+        ResizeMode="NoResize"
+        ShowInTaskbar="True"
+        SizeToContent="WidthAndHeight"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="ToolWindow">
+	<Window.Resources>
+		<Style TargetType="TextBox">
+			<Setter Property="Width" Value="300" />
+			<Setter Property="VerticalContentAlignment" Value="Center" />
+			<Setter Property="Margin" Value="0,1,0,1" />
+		</Style>
+	</Window.Resources>
+	<StackPanel Margin="10,10,10,10">
+		<StackPanel Orientation="Horizontal">
+			<Label Width="225" Content="User ID:" />
+			<TextBlock x:Name="UserIDText"
+			           VerticalAlignment="Center"
+			           TextWrapping="NoWrap" />
+		</StackPanel>
+		<StackPanel Orientation="Horizontal">
+			<Label Width="225" Content="Server:" />
+			<TextBlock x:Name="ServerName"
+			           VerticalAlignment="Center"
+			           TextWrapping="NoWrap" />
+		</StackPanel>
+		<StackPanel Orientation="Horizontal">
+			<Label Width="225" Content="Account name:" />
+			<TextBox x:Name="AccountNameTextBox" TextWrapping="NoWrap" />
+		</StackPanel>
+		<GroupBox BorderBrush="Black" Header="Leave this fields blank for using server defaults:">
+			<StackPanel>
+				<StackPanel Orientation="Horizontal">
+					<Label Width="220" Content="Server IP:" />
+					<TextBox x:Name="IpTextBox" TextWrapping="NoWrap" />
+				</StackPanel>
+				<StackPanel Orientation="Horizontal">
+					<Label Width="220" Content="Port:" />
+					<TextBox x:Name="PortTextBox" TextWrapping="NoWrap" />
+				</StackPanel>
+				<StackPanel Orientation="Horizontal">
+					<Label Width="220" Content="Password (for private server address):" />
+					<TextBox x:Name="PrivatePortPasswordTextBox" TextWrapping="NoWrap" />
+				</StackPanel>
+			</StackPanel>
+		</GroupBox>
+		<GroupBox x:Name="ChangeKeysGroupBox"
+		          BorderBrush="Black"
+		          Header="Change account keys:"
+		          Visibility="Collapsed">
+			<StackPanel>
+				<StackPanel Margin="0,5,0,0" Orientation="Horizontal">
+					<TextBlock Width="94"
+					           Margin="0,0,0,0"
+					           VerticalAlignment="Center"
+					           Text="Random data for key generation (optional):"
+					           TextWrapping="Wrap" />
+					<TextBox x:Name="RandomDataTextBox"
+					         Height="78"
+					         VerticalContentAlignment="Top"
+					         TextWrapping="Wrap" />
+				</StackPanel>
+				<StackPanel Margin="0,5,0,3"
+				            HorizontalAlignment="Center"
+				            Orientation="Horizontal">
+					<Button Click="ChangeKeysOkButton_OnClick" Content="Ok" />
+					<Button Click="ChangeKeysCancelButton_OnClick" Content="Cancel" />
+				</StackPanel>
+			</StackPanel>
+		</GroupBox>
+		<StackPanel x:Name="ButtonsPanel"
+		            Margin="0,5,5,0"
+		            HorizontalAlignment="Right"
+		            Orientation="Horizontal">
+			<Button x:Name="ChangeKeysButton"
+			        Width="160"
+			        Margin="0,0,235,0"
+			        Click="ChangeKeysButton_OnClick"
+			        Content="Change account keys" />
+			<Button x:Name="SaveButton"
+			        Click="SaveButton_OnClick"
+			        Content="Save" />
+			<Button x:Name="CancelButton"
+			        HorizontalAlignment="Left"
+			        Content="Cancel"
+			        IsCancel="True" />
+		</StackPanel>
+	</StackPanel>
+</Window>

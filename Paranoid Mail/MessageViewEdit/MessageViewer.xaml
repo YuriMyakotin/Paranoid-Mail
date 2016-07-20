@@ -1,0 +1,142 @@
+﻿<Window x:Class="Paranoid.MessageViewer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:Paranoid"
+        Width="800"
+        Height="600"
+        Background="{StaticResource BgColor}"
+        ContentRendered="MessageViewer_Loaded"
+        Icon="/Icons/PM_ICO2.png"
+        SizeChanged="onSizeChangedEvent"
+        SnapsToDevicePixels="True"
+        StateChanged="onStateChangedEvent"
+        WindowStyle="SingleBorderWindow">
+	<Window.CommandBindings>
+		<CommandBinding CanExecute="ReplyCommand_CanExecute"
+		                Command="local:MyCommands.ReplyMessageCmd"
+		                Executed="ReplyCommand_OnExecuted" />
+		<CommandBinding CanExecute="AlwaysCanExecute"
+		                Command="local:MyCommands.ForwardMessageCmd"
+		                Executed="ForwardCommand_OnExecuted" />
+		<CommandBinding CanExecute="AlwaysCanExecute"
+		                Command="local:MyCommands.DeleteMessageCmd"
+		                Executed="DeleteCommand_OnExecuted" />
+		<CommandBinding CanExecute="SaveAttachmentsCommand_CanExecute"
+		                Command="local:MyCommands.SaveAllAttachmentsCmd"
+		                Executed="SaveAllAttachmentCommand_OnExecuted" />
+
+	</Window.CommandBindings>
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="Auto" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+		<Grid Row="0">
+			<Ribbon x:Name="ViewingRibbon" Margin="0,-48,0,0">
+				<Ribbon.ApplicationMenu>
+					<RibbonApplicationMenu Visibility="Collapsed" />
+				</Ribbon.ApplicationMenu>
+				<RibbonTab>
+					<RibbonGroup Margin="0,4,0,0" Header="Message">
+						<RibbonButton x:Name="_btnReply"
+						              Command="local:MyCommands.ReplyMessageCmd"
+						              Label="Reply"
+						              LargeImageSource="{StaticResource ReplyMessageIcon}"
+						              ToolTip="Reply" />
+						<RibbonButton x:Name="_btnForward"
+						              Command="local:MyCommands.ForwardMessageCmd"
+						              Label="Forward"
+						              LargeImageSource="{StaticResource ForwardMessageIcon}"
+						              ToolTip="Forward" />
+						<RibbonButton x:Name="_btnDelete"
+						              Command="local:MyCommands.DeleteMessageCmd"
+						              Label="Delete"
+						              LargeImageSource="{StaticResource DeleteMessageIcon}"
+						              ToolTip="Delete" />
+						<RibbonButton x:Name="_btnSaveAll"
+						              Command="local:MyCommands.SaveAllAttachmentsCmd"
+						              Label="Save all attachments"
+						              LargeImageSource="{StaticResource SaveAllAttachmentsIcon}"
+						              ToolTip="Save all attachments"
+						              Visibility="Collapsed" />
+					</RibbonGroup>
+				</RibbonTab>
+			</Ribbon>
+		</Grid>
+		<Grid Margin="0,1,0,1" Row="1">
+			<Label Margin="4,0,0,0"
+			       VerticalAlignment="Center"
+			       Content="Created:" />
+			<TextBlock x:Name="TimeTextBox"
+			           Margin="80,0,4,0"
+			           VerticalAlignment="Center" />
+		</Grid>
+		<Grid Margin="0,1,0,1" Row="2">
+			<Label Margin="4,0,0,0"
+			       VerticalAlignment="Center"
+			       Content="Subject:" />
+			<TextBlock x:Name="SubjectTextBox"
+			           Margin="80,0,4,0"
+			           VerticalAlignment="Center"
+			           TextWrapping="Wrap" />
+		</Grid>
+		<Grid x:Name="AttachmentsGrid"
+		      Margin="0,1,0,1"
+		      Row="3"
+		      Visibility="Collapsed">
+			<Label Margin="4,0,0,0"
+			       VerticalAlignment="Center"
+			       Content="Files:" />
+			<ListView x:Name="AttachmentsListView"
+			          Margin="80,2,4,2"
+			          Background="{StaticResource BgColor}"
+			          BorderThickness="0"
+			          ItemsSource="{Binding}"
+			          MouseDoubleClick="AttachmentsListView_OnMouseDoubleClick">
+				<ListView.ItemsPanel>
+					<ItemsPanelTemplate>
+						<WrapPanel Width="{Binding (FrameworkElement.ActualWidth), RelativeSource={RelativeSource AncestorType=ScrollContentPresenter}}" />
+					</ItemsPanelTemplate>
+				</ListView.ItemsPanel>
+				<ListView.ItemTemplate>
+					<ItemContainerTemplate>
+						<StackPanel Orientation="Horizontal" ToolTip="{Binding FullNameStr}">
+							<Image Width="16"
+							       Height="16"
+							       Source="{StaticResource FileIcon}" />
+							<TextBlock Text="{Binding FileName}">
+								<TextBlock.Style>
+									<Style TargetType="TextBlock">
+										<Setter Property="Foreground" Value="Black" />
+										<Style.Triggers>
+											<DataTrigger Binding="{Binding Path=isAllPartsReceived}" Value="False">
+												<Setter Property="Foreground" Value="DarkGray" />
+												<Setter Property="ToolTip" Value="Not all parts of file received" />
+											</DataTrigger>
+										</Style.Triggers>
+									</Style>
+								</TextBlock.Style>
+							</TextBlock>
+							<TextBlock Text="{Binding FileSizeStr}" />
+						</StackPanel>
+					</ItemContainerTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</Grid>
+		<Grid Row="4">
+			<RichTextBox x:Name="richTextBox"
+			             Margin="2,2,2,2"
+			             AcceptsReturn="True"
+			             AcceptsTab="True"
+			             IsReadOnly="True"
+			             VerticalScrollBarVisibility="Auto">
+				<FlowDocument>
+					<Paragraph />
+				</FlowDocument>
+			</RichTextBox>
+		</Grid>
+	</Grid>
+</Window>

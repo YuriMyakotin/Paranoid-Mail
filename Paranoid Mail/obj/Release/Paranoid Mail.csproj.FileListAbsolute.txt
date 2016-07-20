@@ -1,0 +1,71 @@
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Release\Paranoid Mail.exe.config
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Release\Paranoid Mail.exe
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Release\ParanoidShared.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Release\protobuf-net.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Release\System.Data.SQLite.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Release\MySql.Data.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Release\System.Data.SQLite.xml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Paranoid Mail.csprojResolveAssemblyReference.cache
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Tools\AboutWindow.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\ContactDialogs\DeleteContactDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\ContactDialogs\EditContactDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Startup\FirstTimeQuestionWindow.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\VirtualKbd\VirtualKey.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\VirtualKbd\VirtualKeyboard.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Tools\OptionsDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Tools\AboutWindow.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\ContactDialogs\AcceptIncomingContactRequest.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\AccountDialogs\AccountsWindow.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\ContactDialogs\ContactsDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\ContactDialogs\NewContactDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\ContactDialogs\DeleteContactDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\ContactDialogs\EditContactDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\AccountDialogs\DeleteAccountDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\ContactDialogs\IncomingContactRequestDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\AccountDialogs\EditAccountDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Tools\IDCalculatorWindow.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\MessageViewEdit\ExistingFileReplaceDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\MessageViewEdit\MessageEditor.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\MessageViewEdit\MessageViewer.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\MessageViewEdit\SelectRecipientsDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Startup\EnterPasswordDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Startup\FirstTimeQuestionWindow.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\MainWindow.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Startup\OpenExistingKeyFileDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\AccountDialogs\RegisterAccount.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Startup\SetKeyFileLocationDialog.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Startup\SetPasswordWindow.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\VirtualKbd\VirtualKey.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\VirtualKbd\VirtualKeyboard.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\App.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Paranoid Mail_MarkupCompile.cache
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Paranoid Mail_MarkupCompile.lref
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\App.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Tools\OptionsDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\ContactDialogs\AcceptIncomingContactRequest.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\AccountDialogs\AccountsWindow.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\ContactDialogs\ContactsDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\ContactDialogs\NewContactDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\AccountDialogs\DeleteAccountDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\ContactDialogs\IncomingContactRequestDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\AccountDialogs\EditAccountDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Tools\IDCalculatorWindow.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\MessageViewEdit\ExistingFileReplaceDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\MessageViewEdit\MessageEditor.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\MessageViewEdit\MessageViewer.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\MyResourceDictionary.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\MessageViewEdit\SelectRecipientsDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Startup\EnterPasswordDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\MainWindow.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Startup\OpenExistingKeyFileDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\AccountDialogs\RegisterAccount.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Startup\SetKeyFileLocationDialog.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Startup\SetPasswordWindow.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\VectorIcons.baml
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Paranoid Mail.g.resources
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Paranoid.Properties.Resources.resources
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Paranoid Mail.csproj.GenerateResource.Cache
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\obj\Release\Paranoid Mail.exe
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Release\Dapper.StrongName.dll
+D:\Microsoft Visual Studio\Paranoid\Paranoid Mail\bin\Release\Dapper.StrongName.xml

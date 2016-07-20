@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{75C76B30-3028-4BEE-9C4D-1A9CF6830D58}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Paranoid</RootNamespace>
+    <AssemblyName>ParanoidShared</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\Bin\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>6</LangVersion>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>ParanoidSign.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Dapper.StrongName, Version=1.50.0.0, Culture=neutral, PublicKeyToken=e3e8412083d25dd3, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.StrongName.1.50.0\lib\net451\Dapper.StrongName.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.1.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>..\packages\protobuf-net.2.1.0\lib\net451\protobuf-net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.102.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.102.0\lib\net451\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataModels\NamedValue.cs" />
+    <Compile Include="DBConnection.cs" />
+    <Compile Include="Nacl\MontgomeryCurve25519.cs" />
+    <Compile Include="StreamCiphers\ChaCha.cs" />
+    <Compile Include="DataModels\Users.cs" />
+    <Compile Include="HashLib\ArrayExtensions.cs" />
+    <Compile Include="HashLib\Blake.cs" />
+    <Compile Include="HashLib\Converters.cs" />
+    <Compile Include="HashLib\Hash.cs" />
+    <Compile Include="HashLib\HashBuffer.cs" />
+    <Compile Include="HashLib\HashCryptoNotBuildIn.cs" />
+    <Compile Include="HashLib\HashResult.cs" />
+    <Compile Include="HashLib\HashSize.cs" />
+    <Compile Include="HashLib\IHash.cs" />
+    <Compile Include="HashLib\IHashInfo.cs" />
+    <Compile Include="HashLib\Keccak.cs" />
+    <Compile Include="HashLib\SkeinHlib.cs" />
+    <Compile Include="LZMA\CRC.cs" />
+    <Compile Include="LZMA\ICoder.cs" />
+    <Compile Include="LZMA\IMatchFinder.cs" />
+    <Compile Include="LZMA\LzBinTree.cs" />
+    <Compile Include="LZMA\LzInWindow.cs" />
+    <Compile Include="LZMA\LzmaBase.cs" />
+    <Compile Include="LZMA\LzmaDecoder.cs" />
+    <Compile Include="LZMA\LzmaEncoder.cs" />
+    <Compile Include="LZMA\LzOutWindow.cs" />
+    <Compile Include="LZMA\RangeCoder.cs" />
+    <Compile Include="LZMA\RangeCoderBit.cs" />
+    <Compile Include="LZMA\RangeCoderBitTree.cs" />
+    <Compile Include="LZMA\SevenZipHelper.cs" />
+    <Compile Include="DataModels\Messages.cs" />
+    <Compile Include="DataModels\Servers.cs" />
+    <Compile Include="Nacl\Array16.cs" />
+    <Compile Include="Nacl\Array8.cs" />
+    <Compile Include="Nacl\base.cs" />
+    <Compile Include="Nacl\base2.cs" />
+    <Compile Include="Nacl\ByteIntegerConverter.cs" />
+    <Compile Include="Nacl\CryptoBytes.cs" />
+    <Compile Include="Nacl\d.cs" />
+    <Compile Include="Nacl\d2.cs" />
+    <Compile Include="Nacl\Ed25519.cs" />
+    <Compile Include="Nacl\fe_0.cs" />
+    <Compile Include="Nacl\fe_1.cs" />
+    <Compile Include="Nacl\fe_add.cs" />
+    <Compile Include="Nacl\fe_cmov.cs" />
+    <Compile Include="Nacl\fe_cswap.cs" />
+    <Compile Include="Nacl\fe_frombytes.cs" />
+    <Compile Include="Nacl\fe_invert.cs" />
+    <Compile Include="Nacl\fe_isnegative.cs" />
+    <Compile Include="Nacl\fe_isnonzero.cs" />
+    <Compile Include="Nacl\fe_mul.cs" />
+    <Compile Include="Nacl\fe_mul121666.cs" />
+    <Compile Include="Nacl\fe_neg.cs" />
+    <Compile Include="Nacl\fe_pow22523.cs" />
+    <Compile Include="Nacl\fe_sq.cs" />
+    <Compile Include="Nacl\fe_sq2.cs" />
+    <Compile Include="Nacl\fe_sub.cs" />
+    <Compile Include="Nacl\fe_tobytes.cs" />
+    <Compile Include="Nacl\FieldElement.cs" />
+    <Compile Include="Nacl\ge_add.cs" />
+    <Compile Include="Nacl\ge_double_scalarmult.cs" />
+    <Compile Include="Nacl\ge_frombytes.cs" />
+    <Compile Include="Nacl\ge_madd.cs" />
+    <Compile Include="Nacl\ge_msub.cs" />
+    <Compile Include="Nacl\ge_p1p1_to_p2.cs" />
+    <Compile Include="Nacl\ge_p1p1_to_p3.cs" />
+    <Compile Include="Nacl\ge_p2_0.cs" />
+    <Compile Include="Nacl\ge_p2_dbl.cs" />
+    <Compile Include="Nacl\ge_p3_0.cs" />
+    <Compile Include="Nacl\ge_p3_dbl.cs" />
+    <Compile Include="Nacl\ge_p3_tobytes.cs" />
+    <Compile Include="Nacl\ge_p3_to_cached.cs" />
+    <Compile Include="Nacl\ge_p3_to_p2.cs" />
+    <Compile Include="Nacl\ge_precomp_0.cs" />
+    <Compile Include="Nacl\ge_scalarmult_base.cs" />
+    <Compile Include="Nacl\ge_sub.cs" />
+    <Compile Include="Nacl\ge_tobytes.cs" />
+    <Compile Include="Nacl\GroupElement.cs" />
+    <Compile Include="Nacl\InternalAssert.cs" />
+    <Compile Include="Nacl\keypair.cs" />
+    <Compile Include="Nacl\open.cs" />
+    <Compile Include="Nacl\Salsa20.cs" />
+    <Compile Include="Nacl\SalsaCore.cs" />
+    <Compile Include="Nacl\scalarmult.cs" />
+    <Compile Include="Nacl\sc_clamp.cs" />
+    <Compile Include="Nacl\sc_mul_add.cs" />
+    <Compile Include="Nacl\sc_reduce.cs" />
+    <Compile Include="Nacl\Sha512.cs" />
+    <Compile Include="Nacl\Sha512Internal.cs" />
+    <Compile Include="Nacl\sign.cs" />
+    <Compile Include="Nacl\sqrtm1.cs" />
+    <Compile Include="NetworkEncryption.cs" />
+    <Compile Include="ConstantsAndEnums.cs" />
+    <Compile Include="ParanoidRNG.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="NetSessionBase.cs" />
+    <Compile Include="NetSessionExtended.cs" />
+    <Compile Include="GetServerListNetSession.cs" />
+    <Compile Include="SkeinFish\Presets.cs" />
+    <Compile Include="SkeinFish\Skein.cs" />
+    <Compile Include="SkeinFish\SkeinConfig.cs" />
+    <Compile Include="SkeinFish\Threefish.cs" />
+    <Compile Include="SkeinFish\Threefish1024.cs" />
+    <Compile Include="SkeinFish\Threefish256.cs" />
+    <Compile Include="SkeinFish\Threefish512.cs" />
+    <Compile Include="SkeinFish\ThreefishCipher.cs" />
+    <Compile Include="SkeinFish\ThreefishTransform.cs" />
+    <Compile Include="SkeinFish\UBITweak.cs" />
+    <Compile Include="Str2Hash.cs" />
+    <Compile Include="StreamCiphers\StreamCipher.cs" />
+    <Compile Include="StreamCiphers\ThreeFish256Stream.cs" />
+    <Compile Include="StreamCiphers\ThreeFish512Stream.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="WebInfrastructure.cs" />
+    <Compile Include="WebUpdates\WebUpdate.cs" />
+    <Compile Include="WebUpdates\UpdateDataModels.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="ParanoidSign.pfx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.102.0\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.102.0\build\net451\System.Data.SQLite.Core.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.102.0\build\net451\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.102.0\build\net451\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
