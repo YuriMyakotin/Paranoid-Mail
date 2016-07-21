@@ -432,6 +432,9 @@ namespace Paranoid
 
 			//make and encrypt message header
 			byte[] RandomPrivateKey = new byte[32];
+
+			ParanoidRNG.GetBytes(NewMsgData, 0, 96);
+
 			ParanoidRNG.GetBytes(RandomPrivateKey, 0, 32);
 			byte[] MyPubKey = Ed25519.PublicKeyFromSeed(RandomPrivateKey);
 			Buffer.BlockCopy(MyPubKey, 0, NewMsgData, 136, 32);

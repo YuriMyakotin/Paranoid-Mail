@@ -32,7 +32,7 @@ namespace Paranoid
 
 					List<RoutedMsgInfo> MessagesToBeRouted =
 						DBC.Conn.Query<RoutedMsgInfo>(
-							"Select FromUser,FromServer,MessageID,ToServer from Messages where MessageStatus=3 and MessageType=0 and FromUser=0")
+							"Select FromUser,FromServer,MessageID,ToServer from Messages where MessageStatus=3 and MessageType=0 and FromUser=0 and ToServer<>@MySrvID",new {MySrvID=Cfg.ServerInfo.ServerID})
 							.ToList();
 
 					if (MessagesToBeRouted.Count() != 0)
@@ -59,7 +59,7 @@ namespace Paranoid
 
 
 					//
-					IEnumerable<long> CallList = DBC.Conn.Query<long>("Select distinct FromUser from Messages where MessageStatus=3 and MessageType=0");
+					IEnumerable<long> CallList = DBC.Conn.Query<long>("Select distinct FromUser from Messages where MessageStatus=3 and MessageType=0 and ToServer<>@MySrvID", new { MySrvID = Cfg.ServerInfo.ServerID });
 					foreach (long SrvID in CallList)
 					{
 						if (SrvID == 0) continue;
