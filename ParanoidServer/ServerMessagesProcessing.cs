@@ -93,9 +93,9 @@ namespace Paranoid
 					Message DecodedMsg = DecodeRoutedMessage(Msg,MySecretKey);
 					if (DecodedMsg == null)
 					{
+						Console.WriteLine("Decode failed");
 						return false;
 					}
-
 
 					switch ((MsgType) (DecodedMsg.MessageType))
 					{
@@ -139,6 +139,7 @@ namespace Paranoid
 								MsgTypeToSend, DataToSend, RemoteAuthPubKey);
 							SignRoutedMessage(NewMsg,0);
 
+							if (NewMsg.ToServer == MyServerID) NewMsg.ToUser = DecodedMsg.FromUser;
 							Message.SaveToDB(NewMsg);
 
 
