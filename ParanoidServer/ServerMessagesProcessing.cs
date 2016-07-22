@@ -93,7 +93,7 @@ namespace Paranoid
 					Message DecodedMsg = DecodeRoutedMessage(Msg,MySecretKey);
 					if (DecodedMsg == null)
 					{
-						Console.WriteLine("Decode failed");
+
 						return false;
 					}
 
