@@ -286,59 +286,44 @@ namespace Paranoid
 			long RequestedTime = BitConverter.ToInt64(RecvBuff, 0);
 			using (DB DBC=new DB())
 			{
+
+				long CurrentMaxId = long.MinValue;
+
 				switch (DB.DatabaseType)
 				{
 					case DBType.MySQL:
 					case DBType.SQLite:
-					{
-						List<Server> ServersList;
-						ServersList =
-							DBC.Conn.Query<Server>(
-								"Select * from Servers where ServerInfoTime>@ReqTime order by ServerID limit 512",
-								new {ReqTime = RequestedTime}).ToList();
-						int Cnt = ServersList.Count;
 
-						while (Cnt > 0)
+						while (true)
 						{
-							long CurrentMaxId = ServersList.Select(p => p.ServerID).Max();
+							List<Server> ServersList = DBC.Conn.Query<Server>("Select * from Servers where ServerInfoTime>@ReqTime and ServerID>=@PrevMaxID order by ServerID limit 512",
+									   new { ReqTime = RequestedTime, PrevMaxID = CurrentMaxId }).ToList();
+
+							if (ServersList.Count == 0) break;
+
+							CurrentMaxId = ServersList.Select(p => p.ServerID).Max();
 							SendBuff = MakeCmd<List<Server>>(CmdCode.ServersListPart, ServersList);
 							if (!SendEncrypted()) return;
 
-
-							ServersList =
-								DBC.Conn.Query<Server>(
-									"Select * from Servers where ServerInfoTime>@ReqTime and ServerID>@PrevMaxID order by ServerID limit 512",
-									new {ReqTime = RequestedTime, PrevMaxID = CurrentMaxId}).ToList();
-							Cnt = ServersList.Count;
 						}
-					}
-					break;
+						break;
 
 					case DBType.MSSQL:
-						{
-							List<Server> ServersList =
-								DBC.Conn.Query<Server>(
-									"Select TOP 512 * from Servers where ServerInfoTime>@ReqTime order by ServerID",
-									new {ReqTime = RequestedTime}).ToList();
-						int Cnt = ServersList.Count;
 
-						while (Cnt > 0)
+						while (true)
 						{
-							long CurrentMaxId = ServersList.Select(p => p.ServerID).Max();
+							List<Server> ServersList =DBC.Conn.Query<Server>("Select TOP 512 * from Servers where ServerInfoTime>@ReqTime and ServerID>=@PrevMaxID order by ServerID",
+									new { ReqTime = RequestedTime, PrevMaxID = CurrentMaxId }).ToList();
+
+							if (ServersList.Count == 0) break;
+
+							CurrentMaxId = ServersList.Select(p => p.ServerID).Max();
 							SendBuff = MakeCmd<List<Server>>(CmdCode.ServersListPart, ServersList);
 							if (!SendEncrypted()) return;
 
-
-							ServersList =
-								DBC.Conn.Query<Server>(
-									"Select TOP 512 * from Servers where ServerInfoTime>@ReqTime and ServerID>@PrevMaxID order by ServerID",
-									new {ReqTime = RequestedTime, PrevMaxID = CurrentMaxId}).ToList();
-							Cnt = ServersList.Count;
-
-
 						}
-					}
-					break;
+						break;
+
 
 				}
 

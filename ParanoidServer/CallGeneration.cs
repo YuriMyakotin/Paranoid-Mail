@@ -37,7 +37,7 @@ namespace Paranoid
 
 					if (MessagesToBeRouted.Count() != 0)
 					{
-						IEnumerable<dynamic> SrvList=DBC.Conn.Query("Select ServerID,ServerFlags from Servers where HoldUntil<=@TimeNow",new {TimeNow=LongTime.Now});
+						IEnumerable<dynamic> SrvList=DBC.Conn.Query("Select ServerID,ServerFlags from Servers where HoldUntil<=@TimeNow and ServerID<>@MySrvID", new {TimeNow=LongTime.Now, MySrvID = Cfg.ServerInfo.ServerID });
 						long[] Relays =(from p in SrvList where ((p.ServerFlags & (int) ServerFlagBits.RelayingEnabled) != 0)
 								select (long) p.ServerID).ToArray();
 
