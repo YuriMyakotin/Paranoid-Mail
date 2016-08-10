@@ -28,6 +28,9 @@ namespace Updater
 						Ok=ZipArchiveExtensions.ExtractToDirectory(archive, ".", true);
 					}
 				}
+#if MONO
+				ProgName = "mono \"" + ProgName + "\"";
+#endif
 				System.Diagnostics.Process.Start(ProgName);
 				if (Ok) File.Delete(ZipFileName);
 

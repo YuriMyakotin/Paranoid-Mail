@@ -367,7 +367,7 @@ namespace Paranoid
 		public long TranslateMsgID(long MsgID)
 		{
 			long[] Result = new long[4];
-			HashLib.Crypto.SHA3.Skein256 Hash = new HashLib.Crypto.SHA3.Skein256();
+			HashLib.Crypto.SHA3.Blake256 Hash = new HashLib.Crypto.SHA3.Blake256();
 			Hash.TransformLong(MsgID);
 			Hash.TransformBytes(MsgIdTranslationBytes);
 			byte[] tmp = (Hash.TransformFinal()).GetBytes();

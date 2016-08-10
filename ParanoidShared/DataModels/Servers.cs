@@ -28,6 +28,8 @@ namespace Paranoid
         public string ServerNameStr => Comments.Length > 0 ? Comments : ((ulong) ServerID).ToString();
         public string IpAdressStr => IP + ":" + Port.ToString();
 
+        public string SrvIDStr => ((ulong) ServerID).ToString();
+
         public bool isRootServer => (ServerFlags & (int) ServerFlagBits.RootServer) != 0;
 
         public bool isAutoRegistrationEnabled => (ServerFlags & (int)ServerFlagBits.UsersRegistrationEnabled) != 0;

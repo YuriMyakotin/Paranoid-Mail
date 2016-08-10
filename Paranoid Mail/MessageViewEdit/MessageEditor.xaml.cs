@@ -593,7 +593,7 @@ namespace Paranoid
                         long CurrentFilePos = 0;
                         bool isFirstPart = true;
                         CurrentCompression = FileCompression.LZMA;
-                        Skein256 SK = new Skein256();
+                        Blake256 Bl = new Blake256();
                         Random Rnd = new Random();
 
                         while (CurrentFilePos < FileLenght)
@@ -626,7 +626,7 @@ namespace Paranoid
 
                                 break;
                             }
-                            SK.TransformBytes(FilePartData);
+                            Bl.TransformBytes(FilePartData);
 
                             if (CurrentCompression != FileCompression.Uncompressed)
                             {
@@ -661,7 +661,7 @@ namespace Paranoid
                             }
                             CurrentFilePos += CurrentPartLenght;
                         }
-                        CurrentHash = (SK.TransformFinal()).GetBytes();
+                        CurrentHash = (Bl.TransformFinal()).GetBytes();
                     }
 
                     foreach (MailMessageSendingData MMSD in MsgList)

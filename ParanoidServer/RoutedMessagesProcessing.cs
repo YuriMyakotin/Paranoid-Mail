@@ -9,12 +9,12 @@ namespace Paranoid
 	{
 		private void SignRoutedMessage(Message RoutedMsg,long UserID)
 		{
-			Skein256 SK=new Skein256();
-			SK.TransformLong(UserID);
-			SK.TransformBytes(RoutedMsg.MessageBody, 200, 56);
-			SK.TransformLong(UserID);
-			byte[] Hash = (SK.TransformFinal()).GetBytes();
-			SK.Initialize();
+			Blake256 Bl=new Blake256();
+			Bl.TransformLong(UserID);
+			Bl.TransformBytes(RoutedMsg.MessageBody, 200, 56);
+			Bl.TransformLong(UserID);
+			byte[] Hash = (Bl.TransformFinal()).GetBytes();
+			Bl.Initialize();
 
 			Buffer.BlockCopy(Hash,0,RoutedMsg.MessageBody,64,32);
 
@@ -35,12 +35,12 @@ namespace Paranoid
 			Buffer.BlockCopy(RoutedMsg.MessageBody, 96, RemotePubKey, 0, 32);
 			byte[] SharedKey = Ed25519.KeyExchange(RemotePubKey, Ed25519.ExpandedPrivateKeyFromSeed(MySecretKey));
 
-			Skein256 SK = new Skein256();
-			SK.TransformBytes(SharedKey);
-			SK.TransformBytes(RoutedMsg.MessageBody, 200, 56);
-			SK.TransformBytes(SharedKey);
-			byte[] Hash = (SK.TransformFinal()).GetBytes();
-			SK.Initialize();
+			Blake256 Bl = new Blake256();
+			Bl.TransformBytes(SharedKey);
+			Bl.TransformBytes(RoutedMsg.MessageBody, 200, 56);
+			Bl.TransformBytes(SharedKey);
+			byte[] Hash = (Bl.TransformFinal()).GetBytes();
+			Bl.Initialize();
 
 			return BitConverter.ToInt64(RoutedMsg.MessageBody, 128) ^ BitConverter.ToInt64(Hash, 0) ^
 			              BitConverter.ToInt64(Hash, 8) ^

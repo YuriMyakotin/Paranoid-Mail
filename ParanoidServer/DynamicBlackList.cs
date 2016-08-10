@@ -16,7 +16,7 @@ namespace Paranoid
 	public static class DynamicBlackList
 	{
 		private static readonly object LockObj=new object();
-		private static readonly List<BlacklistRecord> Records=new List<BlacklistRecord>();
+		private static List<BlacklistRecord> Records=new List<BlacklistRecord>();
 
 		public static bool CheckIP(long IpHash)
 		{
@@ -53,12 +53,16 @@ namespace Paranoid
 		{
 			lock (LockObj)
 			{
+				if (Records.Count == 0) return;
+
 				long TimeNow = LongTime.Now;
+				List<BlacklistRecord> NewRecords = new List<BlacklistRecord>();
 
 				foreach (BlacklistRecord BR in Records)
 				{
-					if (BR.HoldUntil<=TimeNow) Records.Remove(BR);
+					if (BR.HoldUntil>TimeNow) NewRecords.Add(BR);
 				}
+				Records = NewRecords;
 			}
 		}
 	}

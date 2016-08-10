@@ -28,7 +28,6 @@
 			<Label Content="Server:" />
 			<ComboBox x:Name="ServerSelectionComboBox"
 			          Width="300"
-			          Height="24"
 			          VerticalAlignment="Top"
 			          Background="{StaticResource BgColor}"
 			          BorderBrush="{StaticResource BorderColor}"
@@ -36,19 +35,22 @@
 			          SelectionChanged="SelectServer_OnSelectionChanged">
 				<ComboBox.ItemTemplate>
 					<DataTemplate>
-						<TextBlock Text="{Binding Path=ServerNameStr}" ToolTip="{Binding Path=IpAdressStr}">
-							<TextBlock.Style>
-								<Style TargetType="TextBlock">
-									<Setter Property="Foreground" Value="Black" />
-									<Style.Triggers>
-										<DataTrigger Binding="{Binding Path=isAutoRegistrationEnabled}" Value="False">
-											<Setter Property="Foreground" Value="DarkGray" />
-										</DataTrigger>
-									</Style.Triggers>
-								</Style>
-							</TextBlock.Style>
-						</TextBlock>
-					</DataTemplate>
+                        <StackPanel ToolTip="{Binding Path=IpAdressStr}">
+                            <TextBlock Text="{Binding Path=Comments}" FontWeight="Bold">
+                                <TextBlock.Style>
+                                    <Style TargetType="TextBlock">
+                                        <Setter Property="Foreground" Value="Black" />
+                                        <Style.Triggers>
+                                            <DataTrigger Binding="{Binding Path=isAutoRegistrationEnabled}" Value="False">
+                                                <Setter Property="Foreground" Value="DarkGray" />
+                                            </DataTrigger>
+                                        </Style.Triggers>
+                                    </Style>
+                                </TextBlock.Style>
+                            </TextBlock>
+                            <TextBlock Text="{Binding Path=SrvIDStr}" FontSize="9"/>
+                        </StackPanel>
+                    </DataTemplate>
 				</ComboBox.ItemTemplate>
 			</ComboBox>
 		</StackPanel>

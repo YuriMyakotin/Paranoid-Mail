@@ -45,12 +45,12 @@ namespace Paranoid
 			byte[] Sig = new byte[64];
 			Buffer.BlockCopy(DataFromWeb, 0, Sig, 0, 64);
 			Buffer.BlockCopy(DataFromWeb, 64, FileBytes, 0, DataFromWeb.Length - 64);
-			Skein512 SK=new Skein512();
-			SK.TransformBytes(RequestData);
-			SK.TransformBytes(FileBytes);
-			SK.TransformBytes(RequestData);
-			byte[] Hash = (SK.TransformFinal()).GetBytes();
-			SK.Initialize();
+			Blake512 Bl=new Blake512();
+			Bl.TransformBytes(RequestData);
+			Bl.TransformBytes(FileBytes);
+			Bl.TransformBytes(RequestData);
+			byte[] Hash = (Bl.TransformFinal()).GetBytes();
+			Bl.Initialize();
 
 			return Ed25519.Verify(Sig, Hash, WN.PublicKey) ? FileBytes : null;
 		}

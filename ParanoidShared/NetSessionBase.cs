@@ -355,15 +355,15 @@ namespace Paranoid
 		{
 			SendBuff=new byte[128];
 			ParanoidRNG.GetBytes(SendBuff, 0,64);
-			Skein512 SK=new Skein512();
+			Blake512 Bl=new Blake512();
 
-			SK.TransformLong(ServerID);
-			SK.TransformBytes(SendBuff, 0,64);
-			if ((PortPassword != null) && (PortPassword.Length >= 1)) SK.TransformString(PortPassword);
-			SK.TransformLong(ServerID);
+			Bl.TransformLong(ServerID);
+			Bl.TransformBytes(SendBuff, 0,64);
+			if ((PortPassword != null) && (PortPassword.Length >= 1)) Bl.TransformString(PortPassword);
+			Bl.TransformLong(ServerID);
 
-			byte[] tmp = (SK.TransformFinal()).GetBytes();
-			SK.Initialize();
+			byte[] tmp = (Bl.TransformFinal()).GetBytes();
+			Bl.Initialize();
 
 			Buffer.BlockCopy(tmp,0, SendBuff, 64,64);
 			SendBuff[70] ^= (byte)'P';
@@ -392,13 +392,13 @@ namespace Paranoid
 
 		protected bool CheckHandshakeData(long ServerID)
 		{
-			Skein512 SK = new Skein512();
-			SK.TransformLong(ServerID);
-			SK.TransformBytes(RecvBuff,0,64);
-			if ((PortPassword!=null)&&(PortPassword.Length>=1)) SK.TransformString(PortPassword);
-			SK.TransformLong(ServerID);
+			Blake512 Bl = new Blake512();
+			Bl.TransformLong(ServerID);
+			Bl.TransformBytes(RecvBuff,0,64);
+			if ((PortPassword!=null)&&(PortPassword.Length>=1)) Bl.TransformString(PortPassword);
+			Bl.TransformLong(ServerID);
 
-			byte[] Hash= (SK.TransformFinal()).GetBytes();
+			byte[] Hash= (Bl.TransformFinal()).GetBytes();
 			for (int i = 0; i < 64; i++)
 				RecvBuff[i + 64] ^= Hash[i];
 

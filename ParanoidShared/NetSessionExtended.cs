@@ -440,12 +440,12 @@ namespace Paranoid
 			Buffer.BlockCopy(MyPubKey, 0, NewMsgData, 136, 32);
 			//
 			byte[] SharedKey = Ed25519.KeyExchange(DestPubAuthKey, Ed25519.ExpandedPrivateKeyFromSeed(RandomPrivateKey));
-			Skein256 SK = new Skein256();
-			SK.TransformBytes(SharedKey);
-			SK.TransformBytes(NewMsgData, 200, 56);
-			SK.TransformBytes(SharedKey);
-			byte[] Hash = (SK.TransformFinal()).GetBytes();
-			SK.Initialize();
+			Blake256 Bl = new Blake256();
+			Bl.TransformBytes(SharedKey);
+			Bl.TransformBytes(NewMsgData, 200, 56);
+			Bl.TransformBytes(SharedKey);
+			byte[] Hash = (Bl.TransformFinal()).GetBytes();
+			Bl.Initialize();
 
 			byte[] tmp = BitConverter.GetBytes(FromUsr);
 			Buffer.BlockCopy(tmp, 0, NewMsgData, 168, 8);
@@ -468,11 +468,11 @@ namespace Paranoid
 			Buffer.BlockCopy(MyPubKey, 0, NewMsgData, 96, 32);
 
 			SharedKey = Ed25519.KeyExchange(Utils.GetSrvPublicKey(ToSrv), Ed25519.ExpandedPrivateKeyFromSeed(RandomPrivateKey));
-			SK.TransformBytes(SharedKey);
-			SK.TransformBytes(NewMsgData, 200, 56);
-			SK.TransformBytes(SharedKey);
-			Hash = (SK.TransformFinal()).GetBytes();
-			SK.Initialize();
+			Bl.TransformBytes(SharedKey);
+			Bl.TransformBytes(NewMsgData, 200, 56);
+			Bl.TransformBytes(SharedKey);
+			Hash = (Bl.TransformFinal()).GetBytes();
+			Bl.Initialize();
 
 			tmp =
 				BitConverter.GetBytes(ToUsr ^ BitConverter.ToInt64(Hash, 0) ^ BitConverter.ToInt64(Hash, 8) ^
@@ -535,12 +535,12 @@ namespace Paranoid
 			Buffer.BlockCopy(RoutedMsg.MessageBody,136,RemotePubKey,0,32);
 			byte[] SharedKey = Ed25519.KeyExchange(RemotePubKey, Ed25519.ExpandedPrivateKeyFromSeed(MyPvtAuthKey));
 
-			Skein256 SK = new Skein256();
-			SK.TransformBytes(SharedKey);
-			SK.TransformBytes(RoutedMsg.MessageBody, 200, 56);
-			SK.TransformBytes(SharedKey);
-			byte[] Hash = (SK.TransformFinal()).GetBytes();
-			SK.Initialize();
+			Blake256 Bl = new Blake256();
+			Bl.TransformBytes(SharedKey);
+			Bl.TransformBytes(RoutedMsg.MessageBody, 200, 56);
+			Bl.TransformBytes(SharedKey);
+			byte[] Hash = (Bl.TransformFinal()).GetBytes();
+			Bl.Initialize();
 
 			for (int i = 0; i < 32; i++) RoutedMsg.MessageBody[i + 168] ^= Hash[i];
 
@@ -555,11 +555,11 @@ namespace Paranoid
 			DecodedMsg.MessageType = BitConverter.ToInt32(RoutedMsg.MessageBody, 192);
 
 
-			SK.TransformLong(DecodedMsg.FromUser);
-			SK.TransformBytes(RoutedMsg.MessageBody, 200, 56);
-			SK.TransformLong(DecodedMsg.FromUser);
-			Hash = (SK.TransformFinal()).GetBytes();
-			SK.Initialize();
+			Bl.TransformLong(DecodedMsg.FromUser);
+			Bl.TransformBytes(RoutedMsg.MessageBody, 200, 56);
+			Bl.TransformLong(DecodedMsg.FromUser);
+			Hash = (Bl.TransformFinal()).GetBytes();
+			Bl.Initialize();
 
 
 			if (!CryptoBytes.ConstantTimeEquals(Hash, 0, RoutedMsg.MessageBody, 64, 32)) return null;

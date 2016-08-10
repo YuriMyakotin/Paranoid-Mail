@@ -92,7 +92,7 @@ namespace Paranoid
 
 				}
 
-				Cfg.CallGenerationEvent.WaitOne(1000 * (Rnd.Next(15, 50)));
+				Cfg.CallGenerationEvent.WaitOne(1000 * (Rnd.Next(25, 65)));
 			}
 		}
 

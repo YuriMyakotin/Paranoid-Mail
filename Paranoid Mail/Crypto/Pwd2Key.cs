@@ -10,7 +10,7 @@ namespace Paranoid
         {
             if ((Rounds<=0)||(N<=0)) throw new Exception("Invalid values");
 
-            Skein512 SkeinSmall=new Skein512();
+            Blake512 Bl512=new Blake512();
 
             SkeinFish.Skein1024 SkeinBig=new SkeinFish.Skein1024();
             SkeinBig.Initialize();
@@ -43,17 +43,17 @@ namespace Paranoid
 
             for (int i = 0; i < Rounds; i++)
             {
-                SkeinSmall.TransformBytes(KeyHash);
+                Bl512.TransformBytes(KeyHash);
 
                 for (int j = 0; j < N; j++)
                 {
                     byte[] tempbytes = new byte[4];
                     Ch20.EncryptBytes(tempbytes,0,4);
-                    SkeinSmall.TransformBytes(buf,(int)((BitConverter.ToUInt32(tempbytes, 0) * 256 * Rounds - 47) / uint.MaxValue),47);
+                    Bl512.TransformBytes(buf,(int)((BitConverter.ToUInt32(tempbytes, 0) * 256 * Rounds - 47) / uint.MaxValue),47);
                 }
-                SkeinSmall.TransformBytes(KeyHash);
-                byte[] tmp = (SkeinSmall.TransformFinal()).GetBytes();
-                SkeinSmall.Initialize();
+                Bl512.TransformBytes(KeyHash);
+                byte[] tmp = (Bl512.TransformFinal()).GetBytes();
+                Bl512.Initialize();
 
                 byte[] tempbytes2 = new byte[2];
                 Ch20.EncryptBytes(tempbytes2, 0, 2);

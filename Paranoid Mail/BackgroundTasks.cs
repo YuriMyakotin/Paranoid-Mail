@@ -48,7 +48,7 @@ namespace Paranoid
             {
                 CheckSrvListUpdate();
                 SendReceiveAll();
-                int WaitTime = (int)Utils.GetIntValue("SendReceiveInterval", 300);
+                int WaitTime = (int)Utils.GetIntValue("SendReceiveInterval", 180);
                 Thread.Sleep(Rnd.Next(WaitTime*800,WaitTime*1200));
             }
 
@@ -57,7 +57,7 @@ namespace Paranoid
         private static void CheckSrvListUpdate()
         {
             long SrvListAge = Utils.GetIntValue("ServerListTimestamp", 0);
-            if (LongTime.Now - SrvListAge >= LongTime.Hours(36)) // check if need update serverlist
+            if (LongTime.Now - SrvListAge >= LongTime.Hours(16)) // check if need update serverlist
             {
                 long NewTime = LongTime.Now;
                 using (GetServerListNetSession NS = new GetServerListNetSession())

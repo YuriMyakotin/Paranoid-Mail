@@ -296,13 +296,13 @@ namespace Paranoid
 
 						while (true)
 						{
-							List<Server> ServersList = DBC.Conn.Query<Server>("Select * from Servers where ServerInfoTime>@ReqTime and ServerID>=@PrevMaxID order by ServerID limit 512",
+							List<Server> ServersList = DBC.Conn.Query<Server>("Select * from Servers where ServerInfoTime>@ReqTime and ServerID>@PrevMaxID order by ServerID limit 512",
 									   new { ReqTime = RequestedTime, PrevMaxID = CurrentMaxId }).ToList();
 
 							if (ServersList.Count == 0) break;
 
 							CurrentMaxId = ServersList.Select(p => p.ServerID).Max();
-							SendBuff = MakeCmd<List<Server>>(CmdCode.ServersListPart, ServersList);
+						    SendBuff = MakeCmd<List<Server>>(CmdCode.ServersListPart, ServersList);
 							if (!SendEncrypted()) return;
 
 						}
@@ -312,7 +312,7 @@ namespace Paranoid
 
 						while (true)
 						{
-							List<Server> ServersList =DBC.Conn.Query<Server>("Select TOP 512 * from Servers where ServerInfoTime>@ReqTime and ServerID>=@PrevMaxID order by ServerID",
+							List<Server> ServersList =DBC.Conn.Query<Server>("Select TOP 512 * from Servers where ServerInfoTime>@ReqTime and ServerID>@PrevMaxID order by ServerID",
 									new { ReqTime = RequestedTime, PrevMaxID = CurrentMaxId }).ToList();
 
 							if (ServersList.Count == 0) break;

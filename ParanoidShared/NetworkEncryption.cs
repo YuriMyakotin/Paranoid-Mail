@@ -17,12 +17,12 @@ namespace Paranoid
 		public StreamCipher Encoder;
 		public StreamCipher Decoder;
 		private byte[] SecretKey;
-		private readonly Skein512 Hash;
+		private readonly Blake512 Hash;
 		public const int KeyBlockSize = 1024;
 
 		public NetworkEncryption()
 		{
-			Hash = new Skein512();
+			Hash = new Blake512();
 		}
 
 		public void AddHashData(byte[] Data) => Hash.TransformBytes(Data);

@@ -329,8 +329,8 @@ namespace Paranoid
 
 		private bool WriteFileData(Attachment Att, FileStream FS)
 		{
-			Skein256 SK=new Skein256();
-			using (var DBC=new DB())
+			Blake256 Bl=new Blake256();
+			using (DB DBC=new DB())
 			{
 
 				foreach (long FilePartID in Att.FileParts)
@@ -353,13 +353,13 @@ namespace Paranoid
 								break;
 					}
 					FS.Write(DecodedBytes, 0, DecodedBytes.Length);
-					SK.TransformBytes(DecodedBytes);
+					Bl.TransformBytes(DecodedBytes);
 
 				}
 			}
 
-			byte[] NewHash = (SK.TransformFinal()).GetBytes();
-			SK.Initialize();
+			byte[] NewHash = (Bl.TransformFinal()).GetBytes();
+			Bl.Initialize();
 
 			return Chaos.NaCl.CryptoBytes.ConstantTimeEquals(NewHash,Att.Hash);
 		}

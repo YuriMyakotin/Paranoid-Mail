@@ -31,7 +31,7 @@ namespace Paranoid
 		{
 			if (BytesLen == 0) BytesLen = Buff.Length - BuffOffset;
 			if ((Buff.Length < BuffOffset + BytesLen)||(BuffOffset<0)||(BytesLen<=0)) throw new ArgumentException("Invalid Array size");
-			Skein384 SK=new Skein384();
+			Blake384 Bl=new Blake384();
 
 			using (RNGCryptoServiceProvider CRNG = new RNGCryptoServiceProvider())
 			{
@@ -45,22 +45,22 @@ namespace Paranoid
 				long Ctr = Interlocked.Add(ref CallsCtr, CallsIncrement);
 
 
-				SK.TransformInt(Ticks);
-				SK.TransformLong(Environment.WorkingSet);
-				SK.TransformLong(DateTime.Now.Ticks);
-				SK.TransformInt(Ticks - OldTicks);
-				SK.TransformInt(Thread.CurrentThread.ManagedThreadId);
+				Bl.TransformInt(Ticks);
+				Bl.TransformLong(Environment.WorkingSet);
+				Bl.TransformLong(DateTime.Now.Ticks);
+				Bl.TransformInt(Ticks - OldTicks);
+				Bl.TransformInt(Thread.CurrentThread.ManagedThreadId);
 
 				byte[] Rnd_tmp = new byte[19];
 				CRNG.GetBytes(Rnd_tmp);
-				SK.TransformBytes(Rnd_tmp);
-				SK.TransformLong(Ctr);
+				Bl.TransformBytes(Rnd_tmp);
+				Bl.TransformLong(Ctr);
 
 
-				if (ExtraData != null) SK.TransformBytes(ExtraData);
+				if (ExtraData != null) Bl.TransformBytes(ExtraData);
 
-				byte[] Hash = (SK.TransformFinal()).GetBytes();
-				SK.Initialize();
+				byte[] Hash = (Bl.TransformFinal()).GetBytes();
+				Bl.Initialize();
 
 				ChaCha Ch20 = new ChaCha(20);
 				Ch20.Init(Hash, 0, Hash, 32, Hash, 40);

@@ -1,7 +1,7 @@
 ﻿using SkeinFish;
 using System;
 using System.Security.Cryptography;
-
+using HashLib.Crypto.SHA3;
 namespace Paranoid
 {
 	public class ParanoidCrypt
@@ -22,7 +22,7 @@ namespace Paranoid
 
 			if ((key.Length != 128) || (salt.Length != 128)) throw new ArgumentException("Invalid arguments length");
 
-			HashLib.Crypto.SHA3.Blake512 Blake = new HashLib.Crypto.SHA3.Blake512();
+			Blake512 Blake = new Blake512();
 			Blake.TransformBytes(key, 0, 48);
 			Blake.TransformBytes(salt);
 			byte[] tmp = (Blake.TransformFinal()).GetBytes();
@@ -32,13 +32,13 @@ namespace Paranoid
 			for (int i = 0; i < tmp.Length; i++)
 				tmp[i] = 0;
 
-			HashLib.Crypto.SHA3.Keccak512 Keccak = new HashLib.Crypto.SHA3.Keccak512();
-			Keccak.TransformBytes(salt);
-			Keccak.TransformBytes(key, 48, 48);
-			tmp = (Keccak.TransformFinal()).GetBytes();
+			Keccak512 K512 = new Keccak512();
+			K512.TransformBytes(salt);
+			K512.TransformBytes(key, 48, 48);
+			tmp = (K512.TransformFinal()).GetBytes();
 
 			Buffer.BlockCopy(tmp, 0, TFKey, 64, 64);
-			ThreeF = new SkeinFish.Threefish1024();
+			ThreeF = new Threefish1024();
 			ThreeF.SetKey(TFKey);
 			for (int i = 0; i > 16; i++)
 				TFKey[i] = 0;
@@ -46,15 +46,15 @@ namespace Paranoid
 			for (int i = 0; i < tmp.Length; i++)
 				tmp[i] = 0;
 
-			HashLib.Crypto.SHA3.Skein384 Skein = new HashLib.Crypto.SHA3.Skein384();
+			Keccak384 K384 = new Keccak384();
 
 
-			Skein.TransformBytes(key, 96, 32);
-			Skein.TransformBytes(salt);
-			tmp = (Skein.TransformFinal()).GetBytes();
+			K384.TransformBytes(key, 96, 32);
+			K384.TransformBytes(salt);
+			tmp = (K384.TransformFinal()).GetBytes();
 			StreamCipherGenerator = new ChaCha(20);
 			StreamCipherGenerator.Init(tmp, 0, tmp, 32, tmp, 40);
-			Skein.Initialize();
+			K384.Initialize();
 
 
 			for (int i = 0; i < tmp.Length; i++)
@@ -62,21 +62,21 @@ namespace Paranoid
 
 
 
-			Keccak.Initialize();
-			Keccak.TransformBytes(key);
-			Keccak.TransformBytes(salt);
-			HMACKey = (Keccak.TransformFinal()).GetBytes();
-			Keccak.Initialize();
+			K512.Initialize();
+			K512.TransformBytes(key);
+			K512.TransformBytes(salt);
+			HMACKey = (K512.TransformFinal()).GetBytes();
+			K512.Initialize();
 		}
 
 		private byte[] CalculateHMAC(byte[] Data, int Offset, int Len)
 		{
-			HashLib.Crypto.SHA3.Skein256 Skein=new HashLib.Crypto.SHA3.Skein256();
-			Skein.TransformBytes(HMACKey);
-			Skein.TransformBytes(Data,Offset,Len);
-			Skein.TransformBytes(HMACKey);
-			byte[] result = (Skein.TransformFinal()).GetBytes();
-			Skein.Initialize();
+			Blake256 Bl=new Blake256();
+			Bl.TransformBytes(HMACKey);
+			Bl.TransformBytes(Data,Offset,Len);
+			Bl.TransformBytes(HMACKey);
+			byte[] result = (Bl.TransformFinal()).GetBytes();
+			Bl.Initialize();
 			return result;
 		}
 
@@ -97,6 +97,7 @@ namespace Paranoid
 
 			int PadDataSize = Len%128;
 			if ((PadDataSize > 120) && (PadAreaSize == 128)) PadAreaSize = 256;
+            else if ((PadDataSize == 0) && (PadAreaSize > 768)) PadAreaSize = 256;
 
 
 			byte[] PadBuf = new byte[PadAreaSize];

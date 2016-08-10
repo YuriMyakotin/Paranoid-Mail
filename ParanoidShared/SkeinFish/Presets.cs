@@ -26,7 +26,7 @@ OTHER DEALINGS IN THE SOFTWARE.
 
 
 namespace SkeinFish
-{ /*
+{
     public class Skein224 : Skein
     {
         public Skein224() : base(256, 224) { }
@@ -46,7 +46,7 @@ namespace SkeinFish
     {
         public Skein512() : base(512, 512) { }
     }
-    */
+
     public class Skein1024 : Skein
     {
         public Skein1024() : base(1024, 1024) { }

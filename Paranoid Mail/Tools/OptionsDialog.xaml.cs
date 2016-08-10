@@ -43,7 +43,7 @@ namespace Paranoid
 
 			NewMessagesFormatCombobox.SelectedValue = (int)Utils.GetIntValue("DefaultMessageTextFormat", 1);
 
-			SendReceiveInterval.Text = Utils.GetIntValue("SendReceiveInterval", 300).ToString();
+			SendReceiveInterval.Text = Utils.GetIntValue("SendReceiveInterval", 180).ToString();
 			FilePartSize.Text = Utils.GetIntValue("FilePartSize", 2097152).ToString();
 		}
 

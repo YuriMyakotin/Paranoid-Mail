@@ -50,9 +50,16 @@
 			<Label Content="Server:" />
 			<ComboBox x:Name="ServerSelectionComboBox"
 			          Width="300"
-			          Height="24"
-			          VerticalAlignment="Top"
-			          DisplayMemberPath="ServerNameStr" />
+			          VerticalAlignment="Top">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Path=Comments}" FontWeight="Bold"/>
+                            <TextBlock Text="{Binding Path=SrvIDStr}" FontSize="9"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
 		</StackPanel>
 		<StackPanel Orientation="Horizontal">
 			<Label Content="Contact Name (optional):" />

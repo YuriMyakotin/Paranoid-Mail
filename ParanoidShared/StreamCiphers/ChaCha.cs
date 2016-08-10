@@ -1,5 +1,6 @@
 ﻿using System;
 using HashLib.Crypto.SHA3;
+using SkeinFish;
 
 namespace Paranoid
 {
@@ -40,11 +41,12 @@ namespace Paranoid
 			int Lenght = KeyData.Length / 2;
 			if (KeyData.Length-DataOffset<Lenght) throw new Exception("Invalid Data Lenght");
 			Skein384 SK = new Skein384();
+            SK.Initialize();
+            //
+            byte[] ChaChaKey=SK.ComputeHash(KeyData, DataOffset, Lenght);
+
 			//
-			SK.TransformBytes(KeyData, DataOffset, Lenght);
-			byte[] ChaChaKey=(SK.TransformFinal()).GetBytes();
-			//
-			SK.Initialize();
+			SK.Dispose();
 
 			Init(ChaChaKey,0, ChaChaKey, 32, ChaChaKey, 40);
 			for (int i = 0; i < ChaChaKey.Length; i++)
