@@ -4,6 +4,7 @@ using System;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Windows;
 
 namespace Paranoid
 {
@@ -22,6 +23,8 @@ namespace Paranoid
 		public static string FileName;
 
 		public static object LockObject=new object();
+
+
 
 		private static byte[] Str2Key(string Str) => Pwd2Key.PasswordToKey(Str, 55243, 61);
 
@@ -94,13 +97,22 @@ namespace Paranoid
 		public static LoadKeysResult LoadKeys()
 		{
 			byte[] EncryptedData;
-			try
+			if (FileName == "::DB")
 			{
-				EncryptedData = File.ReadAllBytes(FileName);
+				EncryptedData=Utils.GetBinaryValue("KeyData");
+				if (EncryptedData==null) return LoadKeysResult.FileOpeningError;
+
 			}
-			catch
+			else
 			{
-				return LoadKeysResult.FileOpeningError;
+				try
+				{
+					EncryptedData = File.ReadAllBytes(FileName);
+				}
+				catch
+				{
+					return LoadKeysResult.FileOpeningError;
+				}
 			}
 			if ((EncryptedData.Length < 288) || (EncryptedData.Length % 128 != 32)) return LoadKeysResult.InvalidFileSize;
 
@@ -131,7 +143,7 @@ namespace Paranoid
 			return LoadKeysResult.Ok;
 		}
 
-		public static void SaveKeys()
+		public static bool SaveKeys()
 		{
 			lock (LockObject)
 			{
@@ -148,14 +160,21 @@ namespace Paranoid
 					Buf[i] = 0;
 				}
 
+				if (FileName == "::DB")
+				{
+					Utils.UpdateBinaryValue("KeyData",EncryptedData);
+					return true;
+				}
+
+
 				try
 				{
 					File.WriteAllBytes(FileName, EncryptedData);
-
+					return true;
 				}
 				catch
 				{
-					throw new IOException("Fatal error - can't save important data");
+					return false;
 				}
 			}
 		}

@@ -8,8 +8,7 @@ namespace Paranoid
 		{
 			int CaptchaValue;
 			isOk = false;
-			Sock.SendTimeout = NetworkVariables.TimeoutInteractive;
-			Sock.ReceiveTimeout = NetworkVariables.TimeoutInteractive;
+
 
 			{
 				int A = Rnd.Next(0, 100);
@@ -33,8 +32,7 @@ namespace Paranoid
 			if (ReceivedCapchaValue != CaptchaValue)
 			{
 				SendBuff = MakeCmd(CmdCode.RegistrationBadCaptcha);
-				if (!SendEncrypted()) return NetSessionResult.NetError;
-				return NetSessionResult.Ok;
+				return !SendEncrypted() ? NetSessionResult.NetError : NetSessionResult.Ok;
 			}
 			SendBuff = MakeCmd(CmdCode.RegistrationCaptchaOk);
 			if (!SendEncrypted()) return NetSessionResult.NetError;

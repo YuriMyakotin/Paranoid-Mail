@@ -204,7 +204,36 @@ namespace Paranoid
 		public static bool ProcessIncomingContactRequest(Account Acc, Message Msg)
 		{
 			if (Msg.MessageBody.Length < 512) return false;
-			Contact Cnt = new Contact
+			if ((Msg.FromServer == Acc.ServerID) && (Msg.FromUser == Acc.UserID)) return false;
+
+			Contact Cnt = Acc.FindContact(Msg.FromUser, Msg.FromServer);
+			if (Cnt != null)
+			{
+				switch (Cnt.Status)
+				{
+					case ContactStatus.InfoRequested:
+					case ContactStatus.UserNotFound:
+					case ContactStatus.RequestRejected:
+						//delete own request, process incoming one
+						break;
+
+
+					case ContactStatus.Blocked:
+					case ContactStatus.Estabilished:
+					case ContactStatus.OtherSideRequested:
+						return false; //ignore blocked or duplicate request
+
+					case ContactStatus.RequestSent: //requests collision, decide - process or ignore.
+						if (Cnt.UserID < Acc.UserID) return false;
+						if ((Cnt.UserID == Acc.UserID) && (Cnt.ServerID < Acc.ServerID)) return false;
+						break;
+
+				}
+				Cnt.DeleteContact(false);
+			}
+
+
+			Cnt = new Contact
 			{
 				StatusOfContact = ContactStatus.OtherSideRequested,
 				ContactID = Acc.MakeNewContactID(),
@@ -254,6 +283,8 @@ namespace Paranoid
 		public static void ProcessIncomingContactRefuse(Account Acc, Message Msg)
 		{
 			Contact Cnt = Acc.FindContact(Msg.FromUser, Msg.FromServer);
+			if (Cnt?.Status != ContactStatus.RequestSent) return;
+
 			Cnt.StatusOfContact = ContactStatus.RequestRejected;
 			CryptoData.SaveKeys();
 		}
@@ -321,6 +352,7 @@ namespace Paranoid
 		public static bool ProcessIncomingContactAccept(Account Acc, Message Msg)
 		{
 			Contact Cnt = Acc.FindContact(Msg.FromUser, Msg.FromServer);
+			if (Cnt?.Status != ContactStatus.RequestSent) return false;
 
 			byte[] tmp = CryptoData.MakeSharedKey1024(Cnt.MyPrivateKey,Cnt.ExtraData);
 			if (tmp == null) return false;

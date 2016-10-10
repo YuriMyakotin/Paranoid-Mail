@@ -7,107 +7,108 @@
         ResizeMode="NoResize"
         SizeToContent="WidthAndHeight"
         WindowStyle="ToolWindow">
-	<Window.Resources>
-		<Style TargetType="Label">
-			<Setter Property="Width" Value="150" />
-		</Style>
-		<Style TargetType="TextBox">
-			<Setter Property="Width" Value="300" />
-			<Setter Property="VerticalContentAlignment" Value="Center" />
-			<Setter Property="Margin" Value="0,2,0,2" />
-		</Style>
-		<Style TargetType="ComboBox">
-			<Setter Property="VerticalContentAlignment" Value="Center" />
-			<Setter Property="Margin" Value="0,2,0,2" />
-		</Style>
-	</Window.Resources>
-	<StackPanel Margin="5">
-		<StackPanel Orientation="Horizontal">
-			<Label Content="Account:" />
-			<ComboBox x:Name="AccountSelectionComboBox"
-			          Width="300"
-			          IsTabStop="True"
-			          ItemsSource="{Binding}">
-				<ComboBox.ItemTemplate>
-					<DataTemplate>
-						<TextBlock Width="280"
-						           Margin="0,1,0,1"
-						           Text="{Binding AccountNameStr}"
-						           ToolTip="{Binding AccountAddressStr}" />
-					</DataTemplate>
-				</ComboBox.ItemTemplate>
-			</ComboBox>
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<Label Content="User Name:" />
-			<TextBox x:Name="UserName" TextChanged="UserName_OnTextChanged" />
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<Label Content="User ID:" />
-			<TextBox x:Name="UserID" />
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<Label Content="Server:" />
-			<ComboBox x:Name="ServerSelectionComboBox"
-			          Width="300"
-			          VerticalAlignment="Top">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Width" Value="150" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="300" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,2,0,2" />
+        </Style>
+        <Style TargetType="ComboBox">
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,2,0,2" />
+        </Style>
+    </Window.Resources>
+    <StackPanel Margin="5">
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Account:" FontWeight="Bold" />
+            <ComboBox x:Name="AccountSelectionComboBox"
+                      Width="300"
+                      IsTabStop="True"
+                      ItemsSource="{Binding}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Width="280"
+                                   Margin="0,1,0,1"
+                                   Text="{Binding AccountNameStr}"
+                                   ToolTip="{Binding AccountAddressStr}" />
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="User Name:" FontWeight="Bold" />
+            <TextBox x:Name="UserName" TextChanged="UserName_OnTextChanged" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="User ID:" FontWeight="Bold" />
+            <TextBox x:Name="UserID" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Server:" FontWeight="Bold" />
+            <ComboBox x:Name="ServerSelectionComboBox"
+                      Width="300"
+                      VerticalAlignment="Top">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
-                            <TextBlock Text="{Binding Path=Comments}" FontWeight="Bold"/>
-                            <TextBlock Text="{Binding Path=SrvIDStr}" FontSize="9"/>
+                            <TextBlock FontWeight="Bold" Text="{Binding Path=Comments}" />
+                            <TextBlock FontSize="9" Text="{Binding Path=SrvIDStr}" />
                         </StackPanel>
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<Label Content="Contact Name (optional):" />
-			<TextBox x:Name="ContactName" />
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<Label VerticalAlignment="Center" Content="Comments (optional):" />
-			<TextBox x:Name="Comments"
-			         Height="60"
-			         VerticalContentAlignment="Top"
-			         TextWrapping="Wrap" />
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<TextBlock Width="145"
-			           Margin="5,0,0,0"
-			           VerticalAlignment="Center"
-			           Text="Message to Contact (64 symbols max):"
-			           TextWrapping="Wrap" />
-			<TextBox x:Name="Message"
-			         Height="45"
-			         VerticalContentAlignment="Top"
-			         MaxLength="64"
-			         TextWrapping="Wrap" />
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<TextBlock Width="145"
-			           Margin="5,0,0,0"
-			           VerticalAlignment="Center"
-			           Text="Random data for key generation (optional):"
-			           TextWrapping="Wrap" />
-			<TextBox x:Name="RandomDataTextBox"
-			         Height="60"
-			         VerticalContentAlignment="Top"
-			         TextWrapping="Wrap" />
-		</StackPanel>
-		<StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
-			<TextBlock x:Name="ErrorMsg"
-			           HorizontalAlignment="Center"
-			           FontWeight="Bold"
-			           Foreground="Red"
-			           TextWrapping="Wrap"
-			           Visibility="Collapsed" />
-		</StackPanel>
-		<StackPanel Margin="0,4,0,0"
-		            HorizontalAlignment="Right"
-		            Orientation="Horizontal">
-			<Button Click="AddButton_OnClick" Content="Add" />
-			<Button Content="Cancel" IsCancel="True" />
-		</StackPanel>
-	</StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Contact Name (optional):" />
+            <TextBox x:Name="ContactName" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label VerticalAlignment="Center" Content="Comments (optional):" />
+            <TextBox x:Name="Comments"
+                     Height="60"
+                     VerticalContentAlignment="Top"
+                     TextWrapping="Wrap" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Width="145"
+                       Margin="5,0,0,0"
+                       VerticalAlignment="Center"
+                       FontWeight="Bold"
+                       Text="Message to Contact (64 symbols max):"
+                       TextWrapping="Wrap" />
+            <TextBox x:Name="Message"
+                     Height="45"
+                     VerticalContentAlignment="Top"
+                     MaxLength="64"
+                     TextWrapping="Wrap" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Width="145"
+                       Margin="5,0,0,0"
+                       VerticalAlignment="Center"
+                       Text="Random data for key generation (optional):"
+                       TextWrapping="Wrap" />
+            <TextBox x:Name="RandomDataTextBox"
+                     Height="60"
+                     VerticalContentAlignment="Top"
+                     TextWrapping="Wrap" />
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+            <TextBlock x:Name="ErrorMsg"
+                       HorizontalAlignment="Center"
+                       FontWeight="Bold"
+                       Foreground="Red"
+                       TextWrapping="Wrap"
+                       Visibility="Collapsed" />
+        </StackPanel>
+        <StackPanel Margin="0,4,0,0"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+            <Button Click="AddButton_OnClick" Content="Add" />
+            <Button Content="Cancel" IsCancel="True" />
+        </StackPanel>
+    </StackPanel>
 </Window>

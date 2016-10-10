@@ -9,34 +9,31 @@
         SizeToContent="WidthAndHeight"
         WindowStartupLocation="CenterScreen"
         WindowStyle="ToolWindow">
-	<Window.Resources>
-		<Style TargetType="Label">
-			<Setter Property="Width" Value="210" />
-		</Style>
-		<Style TargetType="TextBox">
-			<Setter Property="Width" Value="300" />
-			<Setter Property="VerticalContentAlignment" Value="Center" />
-			<Setter Property="Margin" Value="0,1,0,1" />
-		</Style>
-	</Window.Resources>
-	<StackPanel Margin="10,10,10,10">
-		<StackPanel Orientation="Horizontal">
-			<Label Content="Account name:" />
-			<TextBox x:Name="AccountNameTextBox" TextWrapping="NoWrap" />
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<Label Content="Server:" />
-			<ComboBox x:Name="ServerSelectionComboBox"
-			          Width="300"
-			          VerticalAlignment="Top"
-			          Background="{StaticResource BgColor}"
-			          BorderBrush="{StaticResource BorderColor}"
-			          ItemsSource="{Binding}"
-			          SelectionChanged="SelectServer_OnSelectionChanged">
-				<ComboBox.ItemTemplate>
-					<DataTemplate>
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Width" Value="210" />
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Width" Value="300" />
+            <Setter Property="VerticalContentAlignment" Value="Center" />
+            <Setter Property="Margin" Value="0,1,0,1" />
+        </Style>
+    </Window.Resources>
+    <StackPanel Margin="10,10,10,10">
+
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Server:" FontWeight="Bold" />
+            <ComboBox x:Name="ServerSelectionComboBox"
+                      Width="300"
+                      VerticalAlignment="Top"
+                      Background="{StaticResource BgColor}"
+                      BorderBrush="{StaticResource BorderColor}"
+                      ItemsSource="{Binding}"
+                      SelectionChanged="SelectServer_OnSelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
                         <StackPanel ToolTip="{Binding Path=IpAdressStr}">
-                            <TextBlock Text="{Binding Path=Comments}" FontWeight="Bold">
+                            <TextBlock FontWeight="Bold" Text="{Binding Path=Comments}">
                                 <TextBlock.Style>
                                     <Style TargetType="TextBlock">
                                         <Setter Property="Foreground" Value="Black" />
@@ -48,99 +45,104 @@
                                     </Style>
                                 </TextBlock.Style>
                             </TextBlock>
-                            <TextBlock Text="{Binding Path=SrvIDStr}" FontSize="9"/>
+                            <TextBlock FontSize="9" Text="{Binding Path=SrvIDStr}" />
                         </StackPanel>
                     </DataTemplate>
-				</ComboBox.ItemTemplate>
-			</ComboBox>
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<Label Content="User name:" />
-			<TextBox x:Name="UserNameTextBox"
-			         TextChanged="UserNameTextBox_OnTextChanged"
-			         TextWrapping="NoWrap" />
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<Label x:Name="label2" Content="Your user ID:" />
-			<Label x:Name="UserIDTextBlock"
-			       Width="300"
-			       Height="24"
-			       HorizontalAlignment="Center"
-			       VerticalAlignment="Center"
-			       FontStyle="Italic"
-			       FontWeight="Bold" />
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<TextBlock Width="205"
-			           Margin="5,0,0,0"
-			           VerticalAlignment="Center"
-			           Text="Random data for key generation (optional):"
-			           TextWrapping="Wrap" />
-			<TextBox x:Name="RandomDataTextBox"
-			         Height="78"
-			         VerticalContentAlignment="Top"
-			         TextWrapping="Wrap" />
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<Label Content="Server IP:" />
-			<TextBox x:Name="IpTextBox"
-			         TextChanged="UserNameTextBox_OnTextChanged"
-			         TextWrapping="NoWrap" />
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<Label Content="Port:" />
-			<TextBox x:Name="PortTextBox"
-			         TextChanged="UserNameTextBox_OnTextChanged"
-			         TextWrapping="NoWrap" />
-		</StackPanel>
-		<StackPanel Orientation="Horizontal">
-			<Label Content="Password (for private server address):" />
-			<TextBox x:Name="PrivatePortPasswordTextBox" TextWrapping="NoWrap" />
-		</StackPanel>
-		<TextBlock x:Name="ResultsTextBlock"
-		           MaxWidth="300"
-		           Margin="5,1,0,2"
-		           HorizontalAlignment="Stretch"
-		           FontSize="24"
-		           FontWeight="Bold"
-		           TextAlignment="Center"
-		           TextWrapping="Wrap" />
-		<GroupBox x:Name="CapchaGroupBox"
-		          Margin="5,0,5,5"
-		          BorderBrush="Black"
-		          Header="Captcha"
-		          Visibility="Collapsed">
-			<StackPanel>
-				<Image x:Name="img"
-				       Height="48"
-				       Margin="0,5,0,5" />
-				<StackPanel Orientation="Horizontal">
-					<Label Width="200" Content="Please enter numeric result:" />
-					<TextBox x:Name="CaptchaNumberTextBox"
-					         Width="210"
-					         TextWrapping="Wrap" />
-				</StackPanel>
-				<StackPanel Margin="0,5,0,5"
-				            HorizontalAlignment="Center"
-				            Orientation="Horizontal">
-					<Button Click="CaptchaOkButton_OnClick" Content="Ok" />
-					<Button Click="CaptchaCancelButton_OnClick" Content="Cancel" />
-				</StackPanel>
-			</StackPanel>
-		</GroupBox>
-		<StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-			<Button x:Name="RegisterButton"
-			        Click="RegisterButton_OnClick"
-			        Content="Register"
-			        IsEnabled="False" />
-			<Button Width="75"
-			        HorizontalAlignment="Left"
-			        Content="Close"
-			        IsCancel="True" />
-		</StackPanel>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="User name:" FontWeight="Bold" />
+            <TextBox x:Name="UserNameTextBox"
+                     TextChanged="UserNameTextBox_OnTextChanged"
+                     TextWrapping="NoWrap" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Your user ID:" />
+            <Label x:Name="UserIDTextBlock"
+                   Width="300"
+                   Height="24"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontStyle="Italic"
+                   FontWeight="Bold" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Account name (optional):" />
+            <TextBox x:Name="AccountNameTextBox" TextWrapping="NoWrap" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <TextBlock Width="205"
+                       Margin="5,0,0,0"
+                       VerticalAlignment="Center"
+                       Text="Random data for key generation (optional):"
+                       TextWrapping="Wrap" />
+            <TextBox x:Name="RandomDataTextBox"
+                     Height="78"
+                     VerticalContentAlignment="Top"
+                     TextWrapping="Wrap" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Server IP:" />
+            <TextBox x:Name="IpTextBox"
+                     TextChanged="UserNameTextBox_OnTextChanged"
+                     TextWrapping="NoWrap" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Port:" />
+            <TextBox x:Name="PortTextBox"
+                     TextChanged="UserNameTextBox_OnTextChanged"
+                     TextWrapping="NoWrap" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <Label Content="Password (for private server address):" />
+            <TextBox x:Name="PrivatePortPasswordTextBox" TextWrapping="NoWrap" />
+        </StackPanel>
+        <TextBlock x:Name="ResultsTextBlock"
+                   MaxWidth="300"
+                   Margin="5,1,0,2"
+                   HorizontalAlignment="Stretch"
+                   FontSize="24"
+                   FontWeight="Bold"
+                   TextAlignment="Center"
+                   TextWrapping="Wrap" />
+        <GroupBox x:Name="CapchaGroupBox"
+                  Margin="5,0,5,5"
+                  BorderBrush="Black"
+                  Header="Captcha (you have 3 minutes to enter answer)"
+                  Visibility="Collapsed">
+            <StackPanel>
+                <Image x:Name="img"
+                       Height="48"
+                       Margin="0,5,0,5" />
+                <StackPanel Orientation="Horizontal">
+                    <Label Width="250" Content="Please calculate and enter numeric result:" />
+                    <TextBox x:Name="CaptchaNumberTextBox"
+                             Width="160"
+                             TextWrapping="Wrap" />
+                </StackPanel>
+                <StackPanel Margin="0,5,0,5"
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                    <Button Click="CaptchaOkButton_OnClick" Content="Ok" />
+                    <Button Click="CaptchaCancelButton_OnClick" Content="Cancel" />
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+        <StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
+            <Button x:Name="RegisterButton"
+                    Click="RegisterButton_OnClick"
+                    Content="Register"
+                    IsEnabled="False" />
+            <Button x:Name="CloseButton"
+                    Width="75"
+                    HorizontalAlignment="Left"
+                    Content="Close"
+                    IsCancel="True" />
+        </StackPanel>
 
 
 
 
-	</StackPanel>
+    </StackPanel>
 </Window>

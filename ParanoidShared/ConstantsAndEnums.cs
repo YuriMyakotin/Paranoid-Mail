@@ -78,15 +78,13 @@ namespace Paranoid
 
 	public static class NetworkVariables
 	{
-		public static readonly int TimeoutNormal;
-		public static readonly int TimeoutInteractive;
+		public static readonly int SocketTimeout;
 		public static readonly int SocketBufferSize;
 		public static readonly int MaxMessageSize;
 
 		static NetworkVariables()
 		{
-			TimeoutNormal = (int)Utils.GetIntValue("TimeoutNormal", 30000);
-			TimeoutInteractive = (int)Utils.GetIntValue("TimeoutInteractive", 300000);
+			SocketTimeout = (int)Utils.GetIntValue("SocketTimeout", 180000);
 			SocketBufferSize = (int)Utils.GetIntValue("SocketBufferSize", 32768);
 			if ((SocketBufferSize < 8192) || (SocketBufferSize > 131072)) SocketBufferSize = 32768;
 			MaxMessageSize = (int)Utils.GetIntValue("MaxMessageSize", 134217728);

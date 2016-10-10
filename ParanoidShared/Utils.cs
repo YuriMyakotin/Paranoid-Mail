@@ -53,12 +53,10 @@ namespace Paranoid
 
 		public static bool GetServerListFromWeb()
 		{
-
-			//try
 			{
 				byte[] Salt = new byte[32];
 				ParanoidRNG.GetBytes(Salt);
-				byte[] Data = WebInfrastructure.GetDataFromWeb("ServerList",Salt);
+				byte[] Data = WebInfrastructure.GetDataFromWeb("ServerList",Salt,WebNodeSupportBits.RootServer);
 				if (Data == null)
 				{
 					return false;
@@ -72,12 +70,6 @@ namespace Paranoid
 
 
 			}
-			//catch
-			//{
-			 //   throw new Exception("!");
-			 //   return false;
-			//}
-
 		}
 		public static bool UpdateServersList(NetSession NS, long MySrvID)
 		{
@@ -125,7 +117,7 @@ namespace Paranoid
 
 		public static long GetIntValue(string Name, long DefaultValue)
 		{
-			using (var DBC=new DB())
+			using (DB DBC=new DB())
 			{
 				try
 				{
@@ -142,7 +134,7 @@ namespace Paranoid
 
 		public static void UpdateIntValue(string Name, long NewValue)
 		{
-			using (var DBC=new DB())
+			using (DB DBC=new DB())
 			{
 				switch (DB.DatabaseType)
 				{
@@ -194,9 +186,9 @@ namespace Paranoid
 
 		public static void DeleteValue(ValueType Type, string Name)
 		{
-			using (var DBC=new DB())
+			using (DB DBC=new DB())
 			{
-				String Command = "Delete from ";
+				string Command = "Delete from ";
 
 				switch (Type)
 				{
@@ -213,13 +205,17 @@ namespace Paranoid
 				}
 				Command += " where ValueName=@ValueName";
 				DBC.Conn.Execute(Command, new { ValueName = Name });
+			    if (DB.DatabaseType == DBType.SQLite)
+			    {
+			        DBC.Conn.Execute("VACUUM");
+			    }
 
 			}
 		}
 
 		public static byte[] GetBinaryValue(string Name)
 		{
-			using (var DBC=new DB())
+			using (DB DBC=new DB())
 			{
 
 				try
@@ -237,7 +233,7 @@ namespace Paranoid
 
 		public static void UpdateBinaryValue(string Name, byte[] NewValue)
 		{
-			using (var DBC=new DB())
+			using (DB DBC=new DB())
 			{
 				switch (DB.DatabaseType)
 				{
@@ -258,7 +254,7 @@ namespace Paranoid
 
 			long CurrentTimeStamp =LongTime.Now;
 
-			using (var DBC=new DB())
+			using (DB DBC=new DB())
 			{
 
 				var SrvList =
@@ -347,7 +343,7 @@ namespace Paranoid
 
 		public static bool isServerExists(long ServID)
 		{
-			using (var DBC=new DB())
+			using (DB DBC=new DB())
 			{
 
 				return DBC.Conn.QuerySingleOrDefault<int>("Select count(*) from Servers where ServerID=@SrvID", new { SrvID = ServID }) != 0;
@@ -376,7 +372,7 @@ namespace Paranoid
 
 		public static long MakeMsgID()
 		{
-			using (var DBC=new DB())
+			using (DB DBC=new DB())
 			{
 				lock (LockObject)
 				{
@@ -407,11 +403,11 @@ namespace Paranoid
 		{
 			string size = "0 Bytes";
 			if (Size >= 1073741824)
-				 size = string.Format("{0:##.##}", Size / 1073741824.0) + "Gb";
+				 size = $"{Size/1073741824.0:##.##}" + "Gb";
 				else if (Size >= 1048576)
-					size = string.Format("{0:##.##}", Size / 1048576.0) + "Mb";
+					size = $"{Size/1048576.0:##.##}" + "Mb";
 				else if (Size >= 1024.0)
-					size = string.Format("{0:##.##}", Size / 1024.0) + "Kb";
+					size = $"{Size/1024.0:##.##}" + "Kb";
 				else if (Size > 0 && Size < 1024.0)
 					size = Size.ToString() + " Bytes";
 			return size;

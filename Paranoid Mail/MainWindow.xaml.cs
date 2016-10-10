@@ -1,14 +1,9 @@
 ﻿using Paranoid;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-
 using System.Windows.Controls.Ribbon;
 using System.Windows.Input;
 using Dapper;
@@ -96,21 +91,11 @@ namespace Paranoid_Mail
 			if (FoldersTreeView.SelectedItem.GetType() == typeof (Contact))
 			{
 				Contact Cnt = (Contact)FoldersTreeView.SelectedItem;
-				switch (Cnt.Status)
-				{
-					case ContactStatus.OtherSideRequested:
+				if (Cnt.Status==ContactStatus.OtherSideRequested)
 						(new IncomingContactRequestDialog(Cnt)).ShowDialog();
-						break;
 
-					case ContactStatus.Estabilished:
-						SetCurrentContact(Cnt);
-						break;
 
-					default:
-						ClearCurrentContact();
-						break;
-				}
-
+				SetCurrentContact(Cnt);
 			}
 			else
 			{
@@ -125,7 +110,7 @@ namespace Paranoid_Mail
 			CurrentContact = Cnt;
 			ContactNameTextBox.Text = Cnt.ContactName;
 			ContactNameTextBox.ToolTip = Cnt.ContactAddress;
-			using (var DBC=new DB())
+			using (DB DBC=new DB())
 			{
 
 				MainWindowMessagesList = new ObservableCollection<MessageListItem>(

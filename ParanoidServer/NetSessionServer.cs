@@ -81,8 +81,8 @@ namespace Paranoid
 		{
 
 			Sock = TcpClnt.Client;
-			Sock.ReceiveTimeout = NetworkVariables.TimeoutNormal;
-			Sock.SendTimeout =  NetworkVariables.TimeoutNormal;
+			Sock.ReceiveTimeout = NetworkVariables.SocketTimeout;
+			Sock.SendTimeout =  NetworkVariables.SocketTimeout;
 			Sock.Blocking = true;
 			Sock.ReceiveBufferSize = NetworkVariables.SocketBufferSize;
 			Sock.SendBufferSize = NetworkVariables.SocketBufferSize;

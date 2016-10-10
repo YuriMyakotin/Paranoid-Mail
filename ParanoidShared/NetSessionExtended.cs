@@ -102,7 +102,7 @@ namespace Paranoid
 
 						case MsgSendStatus.SendingBody:
 						{
-							int BlockSize = Rnd.Next(14000, 32000);
+							int BlockSize = Rnd.Next(14000, 30000);
 
 							if (OutgoingMSG.MessageBody.Length > OutgoingMSGCurrentPos + BlockSize)
 							{

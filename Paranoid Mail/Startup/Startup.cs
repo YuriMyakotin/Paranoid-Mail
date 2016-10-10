@@ -89,11 +89,18 @@ namespace Paranoid
 
 					if (FTQW.isCreateNew)
 					{
-						using (var DBC=new DB())
+						using (DB DBC=new DB())
 						{
+						    if (DBC.Conn.QuerySingleOrDefault<int>("Select count(*) from Messages") != 0)
+						    {
 
-							DBC.Conn.Execute("Delete from Messages");
-							if (DB.DatabaseType == DBType.SQLite) DBC.Conn.Execute("Vacuum");
+						        if (MessageBox.Show("Do you want to delete old messages?", "", MessageBoxButton.YesNo,
+						                MessageBoxImage.Question) == MessageBoxResult.Yes)
+						        {
+						            DBC.Conn.Execute("Delete from Messages");
+						            if (DB.DatabaseType == DBType.SQLite) DBC.Conn.Execute("Vacuum");
+						        }
+						    }
 						}
 
 						SetPasswordWindow SPW = new SetPasswordWindow(true);
@@ -120,16 +127,19 @@ namespace Paranoid
 				}
 				else
 				{
-					while (!File.Exists(CryptoData.FileName))
-					{
-						OpenExistingKeyFileDialog OEKFD = new OpenExistingKeyFileDialog();
-						result = OEKFD.ShowDialog();
-						if ((result == null) || (result == false))
-						{
-							DeleteValue(ValueType.StringType, "KeyFileName");
-							goto startlabel;
-						}
-					}
+				    if (CryptoData.FileName != "::DB")
+				    {
+				        while (!File.Exists(CryptoData.FileName))
+				        {
+				            OpenExistingKeyFileDialog OEKFD = new OpenExistingKeyFileDialog();
+				            result = OEKFD.ShowDialog();
+				            if ((result == null) || (result == false))
+				            {
+				                DeleteValue(ValueType.StringType, "KeyFileName");
+				                goto startlabel;
+				            }
+				        }
+				    }
 				}
 
 

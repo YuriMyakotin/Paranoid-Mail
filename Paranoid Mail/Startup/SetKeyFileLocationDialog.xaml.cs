@@ -13,7 +13,8 @@ namespace Paranoid
         public SetKeyFileLocationDialog()
         {
             InitializeComponent();
-            FileNameTextBox.Text = System.AppDomain.CurrentDomain.BaseDirectory + "paranoid.key";
+            CryptoData.FileName = "::DB";
+            PortableButton.IsChecked = true;
         }
 
         private void BrowseButton_OnClick(object sender, RoutedEventArgs e)
@@ -30,7 +31,11 @@ namespace Paranoid
 
         private void OkButton_OnClick(object sender, RoutedEventArgs e)
         {
-            CryptoData.FileName = FileNameTextBox.Text;
+            CryptoData.FileName = PortableButton.IsChecked == true ? "::DB" : FileNameTextBox.Text;
+
+            if (CryptoData.FileName.Length < 2) return;
+
+
             CryptoData.Accounts=new ObservableCollection<Account>();
 
             try
@@ -45,6 +50,18 @@ namespace Paranoid
             Utils.UpdateStringValue("KeyFileName", FileNameTextBox.Text);
             DialogResult = true;
 
+        }
+
+        private void PortableButton_OnChecked(object sender, RoutedEventArgs e)
+        {
+            BrowseButton.IsEnabled = false;
+            FileNameTextBox.IsEnabled = false;
+        }
+
+        private void OtherPlaceButton_OnChecked(object sender, RoutedEventArgs e)
+        {
+            BrowseButton.IsEnabled = true;
+            FileNameTextBox.IsEnabled = true;
         }
     }
 }

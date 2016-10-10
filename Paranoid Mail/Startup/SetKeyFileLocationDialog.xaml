@@ -3,39 +3,41 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:Paranoid"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        Title="Set keyfile location"
+        Title="Set accounts/contacts/keys data location"
         Width="Auto"
         Height="Auto"
         Background="{StaticResource BgColor}"
         ResizeMode="NoResize"
-        ShowInTaskbar="False"
+        ShowInTaskbar="True"
         SizeToContent="WidthAndHeight"
         WindowStartupLocation="CenterScreen"
         WindowStyle="ToolWindow">
-	<StackPanel Margin="5,5,5,5">
-		<TextBlock x:Name="textBlock"
-		           MaxWidth="460"
-		           FontSize="14.667"
-		           Text="Please set location of new keyfile. This file used for storing all your accounts and contacts information in strongly encrypted form. If you can, place this file to removable media."
-		           TextWrapping="Wrap" />
-		<StackPanel Margin="0,5,0,5" Orientation="Horizontal">
-			<TextBox x:Name="FileNameTextBox"
-			         Width="400"
-			         HorizontalAlignment="Left"
-			         TextWrapping="NoWrap" />
-			<Button x:Name="BrowseButton"
-			        Margin="5,0,0,0"
-			        Click="BrowseButton_OnClick"
-			        Content="Browse..." />
-		</StackPanel>
-		<StackPanel HorizontalAlignment="Right" Orientation="Horizontal">
-			<Button x:Name="OkButton"
-			        Click="OkButton_OnClick"
-			        Content="Ok" />
+    <StackPanel Margin="10">
+        <RadioButton x:Name="PortableButton"
+                     Checked="PortableButton_OnChecked"
+                     Content="Portable (data saved to database file)" />
+        <RadioButton x:Name="OtherPlaceButton"
+                     Margin="0,5,0,0"
+                     Checked="OtherPlaceButton_OnChecked"
+                     Content="Data saved to different file:" />
+        <StackPanel Margin="20,5,0,0" Orientation="Horizontal">
+            <TextBox x:Name="FileNameTextBox" Width="450" />
+            <Button x:Name="BrowseButton"
+                    Margin="2,0,0,0"
+                    Click="BrowseButton_OnClick"
+                    Content="Browse..." />
+        </StackPanel>
 
-			<Button x:Name="CancelButton"
-			        Content="Cancel"
-			        IsCancel="True" />
-		</StackPanel>
-	</StackPanel>
+        <StackPanel Margin="0,8,0,0"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+            <Button x:Name="OkButton"
+                    Click="OkButton_OnClick"
+                    Content="Ok" />
+
+            <Button x:Name="CancelButton"
+                    Content="Cancel"
+                    IsCancel="True" />
+        </StackPanel>
+    </StackPanel>
 </Window>

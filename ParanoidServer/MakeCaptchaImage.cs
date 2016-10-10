@@ -189,7 +189,7 @@ namespace Paranoid
 			}
 
 
-			Bitmap BlurredBitmap = Blur(oOutputBitmap, 3);
+			Bitmap BlurredBitmap = Blur(oOutputBitmap, 2);
 
 			MemoryStream oMemoryStream = new MemoryStream();
 			BlurredBitmap.Save(oMemoryStream, ImageFormat.Png);

@@ -7,11 +7,17 @@ using HashLib.Crypto.SHA3;
 
 namespace Paranoid
 {
+
+    public enum WebNodeSupportBits : int
+    {
+        RootServer=1,
+        UpdateServer=2
+    }
 	public class WebNode
 	{
 		public readonly string URL;
 		public readonly byte[] PublicKey;
-		public readonly int Flags; //for future use
+		public readonly int Flags;
 
 		public WebNode(string URL, byte[] PubKey, int Flags)
 		{
@@ -55,12 +61,13 @@ namespace Paranoid
 			return Ed25519.Verify(Sig, Hash, WN.PublicKey) ? FileBytes : null;
 		}
 
-		public static byte[] GetDataFromWeb(string ControllerName,byte[] RequestData)
+		public static byte[] GetDataFromWeb(string ControllerName,byte[] RequestData,WebNodeSupportBits RequestType)
 		{
 
 			foreach (WebNode WN in WebNodes)
 			{
-				byte[] RetVal = WebRequest(WN, ControllerName,RequestData);
+			    if ((WN.Flags & (int) RequestType) == 0) continue;
+                byte[] RetVal = WebRequest(WN, ControllerName,RequestData);
 				if (RetVal != null) return RetVal;
 			}
 			return null;
@@ -68,7 +75,7 @@ namespace Paranoid
 
 		static WebInfrastructure()
 		{
-			WebNodes.Add(new WebNode(@"https://paranoid.ym-com.net",Convert.FromBase64String(@"I/YBDFGsjbx2dlDCJi2wJWwGIeKBUkDmrhCA2HjsR04="),0));
+			WebNodes.Add(new WebNode(@"https://paranoid.ym-com.net",Convert.FromBase64String(@"I/YBDFGsjbx2dlDCJi2wJWwGIeKBUkDmrhCA2HjsR04="),(int)WebNodeSupportBits.RootServer|(int)WebNodeSupportBits.UpdateServer));
 		}
 
 	}

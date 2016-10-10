@@ -14,6 +14,7 @@ namespace Paranoid
 	{
 		private NetSessionResult RegisterServer()
 		{
+
 			if (!Cfg.ServerInfo.isRootServer)
 			{
 				SendBuff = MakeCmd(CmdCode.ServiceNotEnabled);
@@ -57,6 +58,8 @@ namespace Paranoid
 				}
 
 				ServerRegData RegData = new ServerRegData(NewSrv, TimeNow) {AwaitRepliesCount = RootServers.Count - 1};
+				SendBuff = MakeCmd(CmdCode.SrvRegistrationInProgress, RegData.RequestID);
+				if (!SendEncrypted()) return NetSessionResult.NetError;
 
 				DBC.Conn.Execute("Insert Into NewServerRegData values(@RequestID,@RegTime,@NewSrvID,@Flags,@IP,@Port,@Pkey,@KeyExpTime,@NextPKey,@Comments,@AwaitRepliesCount)", RegData);
 				SrvRegCheck SRCH = new SrvRegCheck
@@ -73,8 +76,8 @@ namespace Paranoid
 					if (SrvID!= Cfg.ServerInfo.ServerID) Message.PostMessage(0, Cfg.ServerInfo.ServerID,0,SrvID,(int)MsgType.ServerRegistrationCheck,Msg);
 				}
 
-				SendBuff = MakeCmd(CmdCode.SrvRegistrationInProgress,RegData.RequestID);
-				return !SendEncrypted() ? NetSessionResult.NetError : NetSessionResult.Ok;
+
+				return NetSessionResult.Ok;
 			}
 
 

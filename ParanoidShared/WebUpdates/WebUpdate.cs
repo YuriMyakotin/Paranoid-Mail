@@ -27,7 +27,7 @@ namespace Paranoid
 
 			byte[] RequestBytes = Utils.ObjectToBytes(RequestData);
 
-			byte[] ReplyBytes=WebInfrastructure.GetDataFromWeb("Updates", RequestBytes);
+			byte[] ReplyBytes=WebInfrastructure.GetDataFromWeb("Updates", RequestBytes,WebNodeSupportBits.UpdateServer);
 			if (ReplyBytes == null) return null;
 
 
@@ -60,7 +60,7 @@ namespace Paranoid
 
 			byte[] RequestBytes = Utils.ObjectToBytes(RequestData);
 
-			byte[] ReplyBytes = WebInfrastructure.GetDataFromWeb(@"Updates/GetUpdatedFile", RequestBytes);
+			byte[] ReplyBytes = WebInfrastructure.GetDataFromWeb(@"Updates/GetUpdatedFile", RequestBytes,WebNodeSupportBits.UpdateServer);
 			if (ReplyBytes == null) return null;
 
 
@@ -96,7 +96,7 @@ namespace Paranoid
 						System.Diagnostics.Process.Start("mono", UpdaterName+" \""+ZipFileName + "\" \"" + ProgramExePath + "\"");
 						#else
 						System.Diagnostics.Process.Start(UpdaterName, "\""+ZipFileName + "\" \"" + ProgramExePath + "\"");
-						#endif 
+						#endif
 						return true;
 					}
 					catch

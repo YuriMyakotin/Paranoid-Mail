@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 using System.Windows.Controls;
@@ -24,7 +21,7 @@ namespace Paranoid
             else AccountSelectionComboBox.SelectedIndex = 0;
             List<Server> SrvList;
 
-            using (var DBC=new DB())
+            using (DB DBC=new DB())
             {
 
                 SrvList = DBC.Conn.Query<Server>("Select * from Servers").ToList();
@@ -42,7 +39,7 @@ namespace Paranoid
         private void AddButton_OnClick(object sender, RoutedEventArgs e)
         {
             ulong NewUserID;
-            if (!UInt64.TryParse(UserID.Text, out NewUserID))
+            if (!ulong.TryParse(UserID.Text, out NewUserID))
             {
                 UserID.BorderBrush=Brushes.Red;
                 SetErrorMsg("Invalid User ID");
@@ -57,13 +54,22 @@ namespace Paranoid
             }
             Account Acc = (Account) (AccountSelectionComboBox.SelectedItem);
             long SrvID = ((Server) (ServerSelectionComboBox.SelectedItem)).ServerID;
+            if ((Acc.UserID == (long)NewUserID) && (Acc.ServerID == SrvID))
+            {
+                SetErrorMsg("You cannot add yourself");
+                return;
+            }
+
             if (Acc.FindContact((long) NewUserID, SrvID) != null)
             {
                 SetErrorMsg("This contact already exist");
                 return;
             }
 
-            Contact.RequestContactInfo(Acc,SrvID,(long)NewUserID,ContactName.Text,Comments.Text,Message.Text,RandomDataTextBox.Text);
+            string CntName = ContactName.Text;
+            if ((CntName.Length == 0) && (UserName.Text.Length != 0)) CntName = UserName.Text;
+
+            Contact.RequestContactInfo(Acc,SrvID,(long)NewUserID,CntName,Comments.Text,Message.Text,RandomDataTextBox.Text);
             Close();
         }
 

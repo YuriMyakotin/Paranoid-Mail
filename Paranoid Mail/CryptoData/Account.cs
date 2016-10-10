@@ -116,7 +116,7 @@ namespace Paranoid
 
 		public void AccountDeletionDone()
 		{
-			using (var DBC=new DB())
+			using (DB DBC=new DB())
 			{
 
 				DBC.Conn.Execute("Delete from Messages where FromServer=0 and FromUser=@AccID", new {AccID = AccountID});

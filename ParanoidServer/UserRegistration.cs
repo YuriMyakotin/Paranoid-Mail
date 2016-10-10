@@ -11,7 +11,7 @@ namespace Paranoid
 	{
 		private NetSessionResult RegisterUser()
 		{
-			switch (RegistrationMode)
+            switch (RegistrationMode)
 			{
 
 				case AutoRegistrationModes.Disabled:

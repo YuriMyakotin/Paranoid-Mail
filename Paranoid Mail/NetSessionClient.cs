@@ -151,6 +151,7 @@ namespace Paranoid
 				return true;
 			}
 
+
 			long FromUsr = ReceivedMsg.FromUser;
 			long FromSrv = ReceivedMsg.FromServer;
 			long MsgID = ReceivedMsg.MessageID;
@@ -251,6 +252,8 @@ namespace Paranoid
 
 		private bool ProcessClientMessages(Message Msg)
 		{
+
+
 			switch ((MsgType)(Msg.MessageType))
 			{
 				case MsgType.MessageDelivered:
@@ -289,6 +292,8 @@ namespace Paranoid
 				case MsgType.FileAttachmentPart:
 					{
 						Contact Cnt = Acc.FindContact(Msg.FromUser, Msg.FromServer);
+					    if (Cnt?.Status != ContactStatus.Estabilished) return true;
+
 						Msg.FromServer = Acc.AccountID;
 						Msg.FromUser = Cnt.ContactID;
 						Msg.ToServer = 0;

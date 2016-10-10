@@ -39,6 +39,7 @@ namespace Paranoid
 
 		private async void RegisterButton_OnClick(object sender, RoutedEventArgs e)
 		{
+			ResultsTextBlock.Text = string.Empty;
 			using (NetSession Net = new NetSession())
 			{
 				byte[] CaptchaImg;
@@ -54,7 +55,7 @@ namespace Paranoid
 					DisplayError("Invalid Port");
 					return;
 				}
-				;
+
 				if ((SrvPort <= 0) || (SrvPort > 65535))
 				{
 					DisplayError("Invalid Port");
@@ -62,14 +63,14 @@ namespace Paranoid
 				}
 
 
-				if (Srv.IP != IpTextBox.Text)
+				if ((Srv.IP != IpTextBox.Text)|| (PrivatePortPasswordTextBox.Text.Length > 0))
 				{
 					Srv.IP = IpTextBox.Text;
 					OverrideIP = IpTextBox.Text;
 				}
 				else OverrideIP = string.Empty;
 
-				if (Srv.Port != SrvPort)
+				if ((Srv.Port != SrvPort)||(PrivatePortPasswordTextBox.Text.Length>0))
 				{
 					Srv.Port = SrvPort;
 					OverridePort = SrvPort;
@@ -78,7 +79,11 @@ namespace Paranoid
 
 				Mouse.OverrideCursor = Cursors.Wait;
 
-				Account Acc = new Account(SelectedServerID, (long) SelectedUserID, AccountNameTextBox.Text, OverrideIP,
+				string AccName = AccountNameTextBox.Text;
+				if (AccName.Length == 0) AccName = UserNameTextBox.Text + "@" + Srv.Comments;
+
+
+				Account Acc = new Account(SelectedServerID, (long) SelectedUserID, AccName, OverrideIP,
 					OverridePort, PrivatePortPasswordTextBox.Text, Encoding.UTF8.GetBytes(RandomDataTextBox.Text));
 
 				Net.PortPassword = Acc.PrivatePortPassword;
@@ -140,8 +145,6 @@ namespace Paranoid
 					DisplayError("Data error");
 					return;
 				}
-				Net.Sock.SendTimeout = NetworkVariables.TimeoutInteractive;
-				Net.Sock.ReceiveTimeout = NetworkVariables.TimeoutInteractive;
 
 				{
 					BitmapImage biImg = new BitmapImage();
@@ -156,8 +159,14 @@ namespace Paranoid
 				Mouse.OverrideCursor = Cursors.Arrow;
 				CapchaGroupBox.Visibility = Visibility.Visible;
 				CaptchaNumberTextBox.Text = "";
+				RegisterButton.IsEnabled = false;
+				CloseButton.IsEnabled = false;
+
 				continueClicked = new TaskCompletionSource<object>();
 				await continueClicked.Task;
+
+				RegisterButton.IsEnabled = true;
+				CloseButton.IsEnabled = true;
 
 				CapchaGroupBox.Visibility = Visibility.Collapsed;
 				if (!isCaptchaResultEntered)
